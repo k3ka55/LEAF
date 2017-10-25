@@ -1,0 +1,2587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LEAFDBModelLocal" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="LEAFDBEntitiesLocal" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="dispatch_proc" />
+    <FunctionImport Name="dispatchtostock_add">
+      <Parameter Name="dispatch_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Grn_Detection_Service">
+      <Parameter Name="V_inward_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Stock123" />
+    <FunctionImport Name="Wastage_add">
+      <Parameter Name="V_Wastage_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Wastage_proc" />
+    <EntitySet Name="Barcode_Fields_Order" EntityType="LEAFDBModelLocal.Barcode_Fields_Order" />
+    <EntitySet Name="Countries" EntityType="LEAFDBModelLocal.Country" />
+    <EntitySet Name="CSI_Line_item" EntityType="LEAFDBModelLocal.CSI_Line_item" />
+    <EntitySet Name="CSI_NUM_Generation" EntityType="LEAFDBModelLocal.CSI_NUM_Generation" />
+    <EntitySet Name="Customer_Code_Num_Gen" EntityType="LEAFDBModelLocal.Customer_Code_Num_Gen" />
+    <EntitySet Name="Customer_Dispatch_Num_Gen" EntityType="LEAFDBModelLocal.Customer_Dispatch_Num_Gen" />
+    <EntitySet Name="Customer_Indent" EntityType="LEAFDBModelLocal.Customer_Indent" />
+    <EntitySet Name="Customer_Indent_Line_item" EntityType="LEAFDBModelLocal.Customer_Indent_Line_item" />
+    <EntitySet Name="Customer_Indent_Num_Gen" EntityType="LEAFDBModelLocal.Customer_Indent_Num_Gen" />
+    <EntitySet Name="Customer_Indent_Template_Mapping" EntityType="LEAFDBModelLocal.Customer_Indent_Template_Mapping" />
+    <EntitySet Name="Customer_Label_Auto_Num_Gen" EntityType="LEAFDBModelLocal.Customer_Label_Auto_Num_Gen" />
+    <EntitySet Name="Customer_Label_Template" EntityType="LEAFDBModelLocal.Customer_Label_Template" />
+    <EntitySet Name="Customer_LabelTemplate_Mapping" EntityType="LEAFDBModelLocal.Customer_LabelTemplate_Mapping" />
+    <EntitySet Name="Customer_Rate_Template_Mapping" EntityType="LEAFDBModelLocal.Customer_Rate_Template_Mapping" />
+    <EntitySet Name="Customer_Registration" EntityType="LEAFDBModelLocal.Customer_Registration" />
+    <EntitySet Name="Customer_Sale_Indent" EntityType="LEAFDBModelLocal.Customer_Sale_Indent" />
+    <EntitySet Name="Customer_SKU_Mapping" EntityType="LEAFDBModelLocal.Customer_SKU_Mapping" />
+    <EntitySet Name="Customers" EntityType="LEAFDBModelLocal.Customer" />
+    <EntitySet Name="DC_Customer_Mapping" EntityType="LEAFDBModelLocal.DC_Customer_Mapping" />
+    <EntitySet Name="DC_Master" EntityType="LEAFDBModelLocal.DC_Master" />
+    <EntitySet Name="DC_Supplier_Mapping" EntityType="LEAFDBModelLocal.DC_Supplier_Mapping" />
+    <EntitySet Name="DCK_Table" EntityType="LEAFDBModelLocal.DCK_Table" />
+    <EntitySet Name="Delivery_Cycle" EntityType="LEAFDBModelLocal.Delivery_Cycle" />
+    <EntitySet Name="DeliveryAddresses" EntityType="LEAFDBModelLocal.DeliveryAddress" />
+    <EntitySet Name="Dispatch_Consumables" EntityType="LEAFDBModelLocal.Dispatch_Consumables" />
+    <EntitySet Name="Dispatch_Creation" EntityType="LEAFDBModelLocal.Dispatch_Creation" />
+    <EntitySet Name="Dispatch_Line_item" EntityType="LEAFDBModelLocal.Dispatch_Line_item" />
+    <EntitySet Name="Dispatch_NUM_Generation" EntityType="LEAFDBModelLocal.Dispatch_NUM_Generation" />
+    <EntitySet Name="Dispatch_SKU_Line_Items" EntityType="LEAFDBModelLocal.Dispatch_SKU_Line_Items" />
+    <EntitySet Name="Dispatch_Supplier_Track" EntityType="LEAFDBModelLocal.Dispatch_Supplier_Track" />
+    <EntitySet Name="Estimated_Stock" EntityType="LEAFDBModelLocal.Estimated_Stock" />
+    <EntitySet Name="Estimated_Stock_NUM_Generation" EntityType="LEAFDBModelLocal.Estimated_Stock_NUM_Generation" />
+    <EntitySet Name="ExerciseTables" EntityType="LEAFDBModelLocal.ExerciseTable" />
+    <EntitySet Name="GRN_Consumables" EntityType="LEAFDBModelLocal.GRN_Consumables" />
+    <EntitySet Name="GRN_Creation" EntityType="LEAFDBModelLocal.GRN_Creation" />
+    <EntitySet Name="GRN_Line_item" EntityType="LEAFDBModelLocal.GRN_Line_item" />
+    <EntitySet Name="GRN_NUM_Generation" EntityType="LEAFDBModelLocal.GRN_NUM_Generation" />
+    <EntitySet Name="GRN_SKU_Line_Items" EntityType="LEAFDBModelLocal.GRN_SKU_Line_Items" />
+    <EntitySet Name="Intermediate_DC" EntityType="LEAFDBModelLocal.Intermediate_DC" />
+    <EntitySet Name="Invoice_Collection" EntityType="LEAFDBModelLocal.Invoice_Collection" />
+    <EntitySet Name="Invoice_Collection_Excel_Tracking" EntityType="LEAFDBModelLocal.Invoice_Collection_Excel_Tracking" />
+    <EntitySet Name="Invoice_Collection_Num_Gen" EntityType="LEAFDBModelLocal.Invoice_Collection_Num_Gen" />
+    <EntitySet Name="Invoice_Collection_Tracking" EntityType="LEAFDBModelLocal.Invoice_Collection_Tracking" />
+    <EntitySet Name="Invoice_Creation" EntityType="LEAFDBModelLocal.Invoice_Creation" />
+    <EntitySet Name="Invoice_Line_item" EntityType="LEAFDBModelLocal.Invoice_Line_item" />
+    <EntitySet Name="Invoice_NUM_Generation" EntityType="LEAFDBModelLocal.Invoice_NUM_Generation" />
+    <EntitySet Name="Label_Fields" EntityType="LEAFDBModelLocal.Label_Fields" />
+    <EntitySet Name="Location_Master" EntityType="LEAFDBModelLocal.Location_Master" />
+    <EntitySet Name="Material_Master" EntityType="LEAFDBModelLocal.Material_Master" />
+    <EntitySet Name="Material_Master_Num_Gen" EntityType="LEAFDBModelLocal.Material_Master_Num_Gen" />
+    <EntitySet Name="MaterialSources" EntityType="LEAFDBModelLocal.MaterialSource" />
+    <EntitySet Name="Menu_Master" EntityType="LEAFDBModelLocal.Menu_Master" />
+    <EntitySet Name="Multiple_CSI_tracking" EntityType="LEAFDBModelLocal.Multiple_CSI_tracking" />
+    <EntitySet Name="PaymentCycles" EntityType="LEAFDBModelLocal.PaymentCycle" />
+    <EntitySet Name="PaymentTypes" EntityType="LEAFDBModelLocal.PaymentType" />
+    <EntitySet Name="Physical_Stock" EntityType="LEAFDBModelLocal.Physical_Stock" />
+    <EntitySet Name="PinCodes" EntityType="LEAFDBModelLocal.PinCode" />
+    <EntitySet Name="PO_NUM_Generation" EntityType="LEAFDBModelLocal.PO_NUM_Generation" />
+    <EntitySet Name="PO_Rate_Change_Audit" EntityType="LEAFDBModelLocal.PO_Rate_Change_Audit" />
+    <EntitySet Name="PO_RequitionedBy" EntityType="LEAFDBModelLocal.PO_RequitionedBy" />
+    <EntitySet Name="PO_type" EntityType="LEAFDBModelLocal.PO_type" />
+    <EntitySet Name="Printed_Barcode_Details" EntityType="LEAFDBModelLocal.Printed_Barcode_Details" />
+    <EntitySet Name="Purchase_Order" EntityType="LEAFDBModelLocal.Purchase_Order" />
+    <EntitySet Name="Purchase_Order_Line_item" EntityType="LEAFDBModelLocal.Purchase_Order_Line_item" />
+    <EntitySet Name="Rate_Template" EntityType="LEAFDBModelLocal.Rate_Template" />
+    <EntitySet Name="Rate_Template_Line_item" EntityType="LEAFDBModelLocal.Rate_Template_Line_item" />
+    <EntitySet Name="Rate_Template_Num_Gen" EntityType="LEAFDBModelLocal.Rate_Template_Num_Gen" />
+    <EntitySet Name="Region_Master" EntityType="LEAFDBModelLocal.Region_Master" />
+    <EntitySet Name="Role_Master" EntityType="LEAFDBModelLocal.Role_Master" />
+    <EntitySet Name="Role_Menu_Access" EntityType="LEAFDBModelLocal.Role_Menu_Access" />
+    <EntitySet Name="Role_User_Access" EntityType="LEAFDBModelLocal.Role_User_Access" />
+    <EntitySet Name="Route_Area_Master" EntityType="LEAFDBModelLocal.Route_Area_Master" />
+    <EntitySet Name="Route_Master" EntityType="LEAFDBModelLocal.Route_Master" />
+    <EntitySet Name="Route_Master_Auto_Num_Gen" EntityType="LEAFDBModelLocal.Route_Master_Auto_Num_Gen" />
+    <EntitySet Name="Sales_Route_Mapping" EntityType="LEAFDBModelLocal.Sales_Route_Mapping" />
+    <EntitySet Name="SKU_Main_Group" EntityType="LEAFDBModelLocal.SKU_Main_Group" />
+    <EntitySet Name="SKU_Main_Sub_Mapping" EntityType="LEAFDBModelLocal.SKU_Main_Sub_Mapping" />
+    <EntitySet Name="SKU_Master" EntityType="LEAFDBModelLocal.SKU_Master" />
+    <EntitySet Name="SKU_Sub_Group" EntityType="LEAFDBModelLocal.SKU_Sub_Group" />
+    <EntitySet Name="ST_NUM_Generation" EntityType="LEAFDBModelLocal.ST_NUM_Generation" />
+    <EntitySet Name="STI_Line_item" EntityType="LEAFDBModelLocal.STI_Line_item" />
+    <EntitySet Name="Stirnkage_Summary" EntityType="LEAFDBModelLocal.Stirnkage_Summary" />
+    <EntitySet Name="Stocks" EntityType="LEAFDBModelLocal.Stock" />
+    <EntitySet Name="Stock_Code_Num_Gen" EntityType="LEAFDBModelLocal.Stock_Code_Num_Gen" />
+    <EntitySet Name="Stock_Convertion_Tracking" EntityType="LEAFDBModelLocal.Stock_Convertion_Tracking" />
+    <EntitySet Name="Stock_Transaction" EntityType="LEAFDBModelLocal.Stock_Transaction" />
+    <EntitySet Name="Stock_Transfer_Indent" EntityType="LEAFDBModelLocal.Stock_Transfer_Indent" />
+    <EntitySet Name="Stock_Xfer_Dispatch_Num_Gen" EntityType="LEAFDBModelLocal.Stock_Xfer_Dispatch_Num_Gen" />
+    <EntitySet Name="Strinkage_Stock_Adj_Num_Gen" EntityType="LEAFDBModelLocal.Strinkage_Stock_Adj_Num_Gen" />
+    <EntitySet Name="Strinkage_Stock_Adjustement" EntityType="LEAFDBModelLocal.Strinkage_Stock_Adjustement" />
+    <EntitySet Name="Suppliers" EntityType="LEAFDBModelLocal.Supplier" />
+    <EntitySet Name="Supplier_Code_Num_Gen" EntityType="LEAFDBModelLocal.Supplier_Code_Num_Gen" />
+    <EntitySet Name="Sync_Checking" EntityType="LEAFDBModelLocal.Sync_Checking" />
+    <EntitySet Name="Sync_Checking_Line_item" EntityType="LEAFDBModelLocal.Sync_Checking_Line_item" />
+    <EntitySet Name="TALLY_MAPPING" EntityType="LEAFDBModelLocal.TALLY_MAPPING" />
+    <EntitySet Name="Units" EntityType="LEAFDBModelLocal.Unit" />
+    <EntitySet Name="User_DC_Access" EntityType="LEAFDBModelLocal.User_DC_Access" />
+    <EntitySet Name="User_Details" EntityType="LEAFDBModelLocal.User_Details" />
+    <EntitySet Name="User_Location_Access" EntityType="LEAFDBModelLocal.User_Location_Access" />
+    <EntitySet Name="VoucherTypes" EntityType="LEAFDBModelLocal.VoucherType" />
+    <EntitySet Name="Wastage_Auto_Num_Gen" EntityType="LEAFDBModelLocal.Wastage_Auto_Num_Gen" />
+    <EntitySet Name="Wastage_Creation" EntityType="LEAFDBModelLocal.Wastage_Creation" />
+    <EntitySet Name="Wastage_Line_item" EntityType="LEAFDBModelLocal.Wastage_Line_item" />
+    <EntitySet Name="Wastage_Supplier_Info" EntityType="LEAFDBModelLocal.Wastage_Supplier_Info" />
+    <EntitySet Name="Stock_History" EntityType="LEAFDBModelLocal.Stock_History" />
+    <EntitySet Name="DCDASHBOARD_CSI2_CUST" EntityType="LEAFDBModelLocal.DCDASHBOARD_CSI2_CUST" />
+    <EntitySet Name="DCDASHBOARD_CSI2_CUST_PERCENTBASE" EntityType="LEAFDBModelLocal.DCDASHBOARD_CSI2_CUST_PERCENTBASE" />
+    <EntitySet Name="DCDASHBOARD_CSISTIADD" EntityType="LEAFDBModelLocal.DCDASHBOARD_CSISTIADD" />
+    <EntitySet Name="DCDASHBOARD_CSISTIFORGRAPH" EntityType="LEAFDBModelLocal.DCDASHBOARD_CSISTIFORGRAPH" />
+    <EntitySet Name="DCDASHBOARD_DISPATCH" EntityType="LEAFDBModelLocal.DCDASHBOARD_DISPATCH" />
+    <EntitySet Name="DCDASHBOARD_GRN" EntityType="LEAFDBModelLocal.DCDASHBOARD_GRN" />
+    <EntitySet Name="DCDASHBOARD_PO" EntityType="LEAFDBModelLocal.DCDASHBOARD_PO" />
+    <EntitySet Name="DCDASHBOARD_STI" EntityType="LEAFDBModelLocal.DCDASHBOARD_STI" />
+    <EntitySet Name="DCDASHBOARD_STOCK" EntityType="LEAFDBModelLocal.DCDASHBOARD_STOCK" />
+    <EntitySet Name="DCDASHBOARD_TOP5CUSTOMER" EntityType="LEAFDBModelLocal.DCDASHBOARD_TOP5CUSTOMER" />
+    <EntitySet Name="DCDASHBOARD_TOP5SKU" EntityType="LEAFDBModelLocal.DCDASHBOARD_TOP5SKU" />
+    <EntitySet Name="DCDASHBOARD_WASTAGE" EntityType="LEAFDBModelLocal.DCDASHBOARD_WASTAGE" />
+    <EntitySet Name="REPORT_12MONTH_BASED_ORDER" EntityType="LEAFDBModelLocal.REPORT_12MONTH_BASED_ORDER" />
+    <EntitySet Name="REPORT_CSI" EntityType="LEAFDBModelLocal.REPORT_CSI" />
+    <EntitySet Name="REPORT_CUSTOMER_FILL_RATE" EntityType="LEAFDBModelLocal.REPORT_CUSTOMER_FILL_RATE" />
+    <EntitySet Name="REPORT_DISPATCH" EntityType="LEAFDBModelLocal.REPORT_DISPATCH" />
+    <EntitySet Name="REPORT_DISPATCH_PACKTYPE_BASED" EntityType="LEAFDBModelLocal.REPORT_DISPATCH_PACKTYPE_BASED" />
+    <EntitySet Name="REPORT_MONTH_BASED_ORDER" EntityType="LEAFDBModelLocal.REPORT_MONTH_BASED_ORDER" />
+    <EntitySet Name="REPORT_OF_IN_OUT_SUMMARY" EntityType="LEAFDBModelLocal.REPORT_OF_IN_OUT_SUMMARY" />
+    <EntitySet Name="REPORT_PURCHASE" EntityType="LEAFDBModelLocal.REPORT_PURCHASE" />
+    <EntitySet Name="REPORT_STI_DISPATCH" EntityType="LEAFDBModelLocal.REPORT_STI_DISPATCH" />
+    <EntitySet Name="REPORT_STOCK_SUMMARY_UPDATED" EntityType="LEAFDBModelLocal.REPORT_STOCK_SUMMARY_UPDATED" />
+    <EntitySet Name="REPORT_WASTAGE_QTY" EntityType="LEAFDBModelLocal.REPORT_WASTAGE_QTY" />
+    <AssociationSet Name="FK_Dispatch_Creation_Dispatch_Creation" Association="LEAFDBModelLocal.FK_Dispatch_Creation_Dispatch_Creation">
+      <End Role="Dispatch_Creation" EntitySet="Dispatch_Creation" />
+      <End Role="Dispatch_Creation1" EntitySet="Dispatch_Creation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dispatch_Supplier_Track_Dispatch_Supplier_Track" Association="LEAFDBModelLocal.FK_Dispatch_Supplier_Track_Dispatch_Supplier_Track">
+      <End Role="Dispatch_Supplier_Track" EntitySet="Dispatch_Supplier_Track" />
+      <End Role="Dispatch_Supplier_Track1" EntitySet="Dispatch_Supplier_Track" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_Creation_Invoice_Creation" Association="LEAFDBModelLocal.FK_Invoice_Creation_Invoice_Creation">
+      <End Role="Invoice_Creation" EntitySet="Invoice_Creation" />
+      <End Role="Invoice_Creation1" EntitySet="Invoice_Creation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Purchase_Order_Purchase_Order" Association="LEAFDBModelLocal.FK_Purchase_Order_Purchase_Order">
+      <End Role="Purchase_Order" EntitySet="Purchase_Order" />
+      <End Role="Purchase_Order1" EntitySet="Purchase_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stock_Stock" Association="LEAFDBModelLocal.FK_Stock_Stock">
+      <End Role="Stock" EntitySet="Stocks" />
+      <End Role="Stock1" EntitySet="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stock_Transaction_Stock_Transaction" Association="LEAFDBModelLocal.FK_Stock_Transaction_Stock_Transaction">
+      <End Role="Stock_Transaction" EntitySet="Stock_Transaction" />
+      <End Role="Stock_Transaction1" EntitySet="Stock_Transaction" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Barcode_Fields_Order">
+    <Key>
+      <PropertyRef Name="Field_Id" />
+    </Key>
+    <Property Name="Field_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Field1" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field2" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field3" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field4" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field5" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field6" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field7" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field8" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field9" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field10" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field11" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field12" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field13" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field14" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field15" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field16" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field17" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field18" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field19" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Field20" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="County_Id" />
+    </Key>
+    <Property Name="County_Id" Type="Int32" Nullable="false" />
+    <Property Name="CountryName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CSI_Line_item">
+    <Key>
+      <PropertyRef Name="CSI_Line_Id" />
+    </Key>
+    <Property Name="CSI_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CSI_id" Type="Int32" />
+    <Property Name="CSI_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Size" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Weight_Type_Id" Type="Int32" />
+    <Property Name="Pack_Weight_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_Qty" Type="Double" />
+    <Property Name="Remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Double" />
+    <Property Name="Master_Id" Type="Int32" />
+    <Property Name="HSN_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_GST" Type="Double" />
+    <Property Name="CGST" Type="Double" />
+    <Property Name="SGST" Type="Double" />
+  </EntityType>
+  <EntityType Name="CSI_NUM_Generation">
+    <Key>
+      <PropertyRef Name="CSI_Num_Gen_Id" />
+    </Key>
+    <Property Name="CSI_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CSI_Last_Number" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Customer_Code_Num_Gen">
+    <Key>
+      <PropertyRef Name="Customer_Num_Gen_Id" />
+    </Key>
+    <Property Name="Customer_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Customer_Dispatch_Num_Gen">
+    <Key>
+      <PropertyRef Name="Dispatch_Num_Gen_Id" />
+    </Key>
+    <Property Name="Dispatch_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Dispatch_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Customer_Indent">
+    <Key>
+      <PropertyRef Name="Indent_ID" />
+    </Key>
+    <Property Name="Indent_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Indent_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Id" Type="Int32" />
+    <Property Name="Location_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Id" Type="Int32" />
+    <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Delivery_Address" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_cycle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Expected_Date" Type="DateTime" Precision="0" />
+    <Property Name="Delivery_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Price_Template_ID" Type="Int32" />
+    <Property Name="Price_Template_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Price_Template_Valitity_upto" Type="DateTime" Precision="0" />
+    <Property Name="Is_Deleted" Type="Boolean" />
+    <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Price_Template_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Is_Sync" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Customer_Indent_Line_item">
+    <Key>
+      <PropertyRef Name="CI_Line_Id" />
+    </Key>
+    <Property Name="CI_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Indent_ID" Type="Int32" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Size" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Weight_Type_Id" Type="Int32" />
+    <Property Name="Pack_Weight_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Dispatch_Qty" Type="Double" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="HSN_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_GST" Type="Double" />
+    <Property Name="CGST" Type="Double" />
+    <Property Name="SGST" Type="Double" />
+  </EntityType>
+  <EntityType Name="Customer_Indent_Num_Gen">
+    <Key>
+      <PropertyRef Name="Customer_Indent_Num_Gen_Id" />
+    </Key>
+    <Property Name="Customer_Indent_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Indent_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Customer_Indent_Template_Mapping">
+    <Key>
+      <PropertyRef Name="CIT_Mapping_ID" />
+    </Key>
+    <Property Name="CIT_Mapping_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_ID" Type="Int32" />
+    <Property Name="Indent_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Template_ID" Type="Int32" />
+    <Property Name="Template_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Template_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Id" Type="Int32" />
+    <Property Name="Region_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Id" Type="Int32" />
+    <Property Name="Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Customer_Label_Auto_Num_Gen">
+    <Key>
+      <PropertyRef Name="Cust_Label_Auto_Gen_Id" />
+    </Key>
+    <Property Name="Cust_Label_Auto_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Template_Prefix" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Template_Last_No" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Customer_Label_Template">
+    <Key>
+      <PropertyRef Name="Cust_Label_Template_Id" />
+    </Key>
+    <Property Name="Cust_Label_Template_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Template_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Template_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Template_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Field_Id" Type="Int32" />
+    <Property Name="Field_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Field_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Customer_LabelTemplate_Mapping">
+    <Key>
+      <PropertyRef Name="Cust_Label_map_Id" />
+    </Key>
+    <Property Name="Cust_Label_map_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Template_Id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Customer_Rate_Template_Mapping">
+    <Key>
+      <PropertyRef Name="CRT_Mapping_ID" />
+    </Key>
+    <Property Name="CRT_Mapping_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Template_ID" Type="Int32" />
+    <Property Name="Template_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Id" Type="Int32" />
+    <Property Name="Region_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Id" Type="Int32" />
+    <Property Name="Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Template_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Customer_Registration">
+    <Key>
+      <PropertyRef Name="Cust_Reg_Id" />
+    </Key>
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Parent_Company_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Primary_Contact_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contact_Number" Type="Int64" />
+    <Property Name="Cust_Reg_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Primary_Email_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Email_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reason" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location_ID" Type="Int32" />
+    <Property Name="Region_Id" Type="Int32" />
+    <Property Name="Region_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Category_Id" Type="Int32" />
+    <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Servicing_DC_Id" Type="Int32" />
+    <Property Name="Servicing_DC_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Servicing_DC" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Type_Id" Type="Int32" />
+    <Property Name="Store_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Engagement_Start_Date" Type="DateTime" Precision="3" />
+    <Property Name="Store_Image_Display_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Image_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Owner_Image_Display_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Owner_Image_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Latitude" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Longitude" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Approved_by" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Is_Approved" Type="Boolean" />
+    <Property Name="Date_Of_Approval" Type="DateTime" Precision="0" />
+    <Property Name="Is_Delete" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="Created_From" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Customer_Sale_Indent">
+    <Key>
+      <PropertyRef Name="CSI_id" />
+    </Key>
+    <Property Name="CSI_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CSI_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CSI_Raised_date" Type="DateTime" Precision="0" />
+    <Property Name="CSI_Timestamp" Type="DateTime" Precision="3" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="CSI_From" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Location_ID" Type="Int32" />
+    <Property Name="Delivery_Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_cycle" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Expected_Date" Type="DateTime" Precision="0" />
+    <Property Name="Delievery_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Date" Type="DateTime" Precision="0" />
+    <Property Name="CSI_raised_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CSI_Approved_Flag" Type="Boolean" />
+    <Property Name="CSI_Approved_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CSI_Approved_date" Type="DateTime" Precision="0" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Multiple_CSI_tracking_id_FK" Type="Int32" />
+    <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" Nullable="false" />
+    <Property Name="CSI_Create_by" Type="Int32" />
+    <Property Name="CSI_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_Id" Type="Int32" />
+    <Property Name="Indent_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Rate_Template_Id" Type="Int32" />
+    <Property Name="Rate_Template_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="is_Syunc" Type="Boolean" />
+    <Property Name="Rate_Template_Valitity_upto" Type="DateTime" Precision="0" />
+    <Property Name="User_Location_Id" Type="Int32" />
+    <Property Name="User_Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rate_Template_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Expected_Route_Id" Type="Int32" />
+    <Property Name="Expected_Route_Alias_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Expected_Route_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Expected_Delivering_Sales_Person_Id" Type="Int32" />
+    <Property Name="Expected_Delivering_Sales_Person_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Customer_SKU_Mapping">
+    <Key>
+      <PropertyRef Name="Customer_SKU_Mapping_Id" />
+    </Key>
+    <Property Name="Customer_SKU_Mapping_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_SKU_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="EAN_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Cust_Id" />
+    </Key>
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Cust_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cust_Reg_Id" Type="Int32" />
+    <Property Name="Customer_Code" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Sales_Person_Id" Type="Int32" />
+    <Property Name="Sales_Person_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Id" Type="Int32" />
+    <Property Name="Route_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="District" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pincode" Type="Int32" />
+    <Property Name="Primary_Contact_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contact_Number" Type="Int64" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Primary_Email_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Email_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Syunc" Type="Boolean" />
+    <Property Name="Parent_Company_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Abbreviation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Id" Type="Int32" />
+    <Property Name="Region_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Category_Id" Type="Int32" />
+    <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Servicing_DC_Id" Type="Int32" />
+    <Property Name="Servicing_DC" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Type_Id" Type="Int32" />
+    <Property Name="Store_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Engagement_Type_Id" Type="Int32" />
+    <Property Name="Engagement_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="No_of_Stores" Type="Int32" />
+    <Property Name="Transaction_Volume" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Engagement_Start_Date" Type="DateTime" Precision="0" />
+    <Property Name="Account_Manger" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Primary_ContactPerson_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Primary_ContactPerson_No" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Category_Head_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Business_Head_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Load_Per_Delivery" Type="Double" />
+    <Property Name="Indent_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Location_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Location_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Location_Id" Type="Int32" />
+    <Property Name="Delivery_Type_Id" Type="Int32" />
+    <Property Name="Delivery_Address" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Contact_Person" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Contact_Person_No" Type="Int64" />
+    <Property Name="GRN_Receive_Type_Id" Type="Int32" />
+    <Property Name="GRN_Receive_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Return_Policy" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pricing_Change_Schedule" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Return_Policy_Id" Type="Int32" />
+    <Property Name="Pricing_Change_Schedule_Id" Type="Int32" />
+    <Property Name="Payment_Type_Id" Type="Int32" />
+    <Property Name="Payment_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Credit_Period_Id" Type="Int32" />
+    <Property Name="Credit_Period" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Payment_Date" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Credit_Limit" Type="Double" />
+    <Property Name="Is_Delete" Type="Boolean" />
+    <Property Name="Credit_Period_Reason" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Price_Change_Shedule_Reason" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Days" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="GRN_Receive_Shedule" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Tin_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Pan_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Account_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Bank_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Branch_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Account_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Bank_IFSC_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Location_ID" Type="Int32" />
+    <Property Name="Store_Type_Other" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Tally_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Ref_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_User_Id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Image_Display_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Image_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Owner_Image_Display_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Owner_Image_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Latitude" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Longitude" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_GST_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DC_Customer_Mapping">
+    <Key>
+      <PropertyRef Name="Dc_Cust_map_Id" />
+    </Key>
+    <Property Name="Cust_Id" Type="Int32" />
+    <Property Name="Cust_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Dc_Cust_map_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cust_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DC_Master">
+    <Key>
+      <PropertyRef Name="Dc_Id" />
+    </Key>
+    <Property Name="Dc_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dc_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CIN_No" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="FSSAI_No" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PAN_No" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CST_No" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="TIN_No" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="County" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PinCode" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Id" Type="Int32" />
+    <Property Name="Region_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Offline_Flag" Type="Boolean" />
+    <Property Name="GST_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UIN_No" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_GST" Type="Double" />
+    <Property Name="CGST" Type="Double" />
+    <Property Name="SGST" Type="Double" />
+  </EntityType>
+  <EntityType Name="DC_Supplier_Mapping">
+    <Key>
+      <PropertyRef Name="Dc_Supplier_map_Id" />
+    </Key>
+    <Property Name="Supplier_ID" Type="Int32" />
+    <Property Name="Supplier__Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Dc_Supplier_map_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_id" Type="Int32" />
+    <Property Name="Supplier_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DCK_Table">
+    <Key>
+      <PropertyRef Name="DCK_ID" />
+    </Key>
+    <Property Name="DCK_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DCK_Field" Type="DateTime" Precision="0" />
+    <Property Name="DCK_Field1" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Delivery_Cycle">
+    <Key>
+      <PropertyRef Name="Delivery_Cycle_Id" />
+    </Key>
+    <Property Name="Delivery_Cycle_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Delivery_Cycle_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DeliveryAddress">
+    <Key>
+      <PropertyRef Name="Delivery_Address_Id" />
+    </Key>
+    <Property Name="Delivery_Address_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ref_Id" Type="Int32" />
+    <Property Name="Ref_Obj_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Location_Id" Type="Int32" />
+    <Property Name="Delivery_Location_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Time" Type="DateTime" Precision="3" />
+    <Property Name="Delivery_Contact_Person_No" Type="Int64" />
+    <Property Name="Delivery_Contact_Person" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Address" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Dispatch_Consumables">
+    <Key>
+      <PropertyRef Name="Dispatch_Consumables_Id" />
+    </Key>
+    <Property Name="Dispatch_Consumables_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dispatch_Line_Id_FK" Type="Int32" />
+    <Property Name="Dispatch_SKU_Line_Items_Id_FK" Type="Int32" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="Consumable_Qty" Type="Double" />
+    <Property Name="Grade" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Dispatch_Creation">
+    <Key>
+      <PropertyRef Name="Dispatch_Id" />
+    </Key>
+    <Property Name="Dispatch_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dispatched_Location_ID" Type="Int32" />
+    <Property Name="Dispatch_Location_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="STI_Id" Type="Int32" />
+    <Property Name="STI_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CSI_Id" Type="Int32" />
+    <Property Name="CSI_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Acceptance_Status" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_Rls_Date" Type="DateTime" Precision="0" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Delievery_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Dispatch_Number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Stock_Xfer_Dispatch_Number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Date" Type="DateTime" Precision="0" />
+    <Property Name="Dispatch_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_done_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_time_stamp" Type="DateTime" Precision="3" />
+    <Property Name="Delivery_Location_ID" Type="Int32" />
+    <Property Name="Delivery_Location_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Expected_Delivery_date" Type="DateTime" Precision="0" />
+    <Property Name="Expected_Delivery_time" Type="DateTime" Precision="3" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Invoice_Flag" Type="Boolean" />
+    <Property Name="is_Syunc" Type="Boolean" />
+    <Property Name="Vehicle_No" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Sales_Person_Id" Type="Int32" />
+    <Property Name="Sales_Person_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Id" Type="Int32" />
+    <Property Name="Route_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Route" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Price_Template_ID" Type="Int32" />
+    <Property Name="Price_Template_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Price_Template_Valitity_upto" Type="DateTime" Precision="0" />
+    <Property Name="Price_Template_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Order_Reference" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Dispatch_Creation1" Relationship="LEAFDBModelLocal.FK_Dispatch_Creation_Dispatch_Creation" FromRole="Dispatch_Creation" ToRole="Dispatch_Creation1" />
+    <NavigationProperty Name="Dispatch_Creation2" Relationship="LEAFDBModelLocal.FK_Dispatch_Creation_Dispatch_Creation" FromRole="Dispatch_Creation1" ToRole="Dispatch_Creation" />
+  </EntityType>
+  <EntityType Name="Dispatch_Line_item">
+    <Key>
+      <PropertyRef Name="Dispatch_Line_Id" />
+    </Key>
+    <Property Name="Dispatch_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dispatch_Id" Type="Int32" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Id" Type="Int32" />
+    <Property Name="Supplier_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Size" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Weight_Type_Id" Type="Int32" />
+    <Property Name="Pack_Weight_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Strinkage_Qty" Type="Double" />
+    <Property Name="Indent_Qty" Type="Double" />
+    <Property Name="Dispatch_Qty" Type="Double" />
+    <Property Name="Grade" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Return_Qty" Type="Double" />
+    <Property Name="Received_Qty" Type="Double" />
+    <Property Name="Accepted_Qty" Type="Double" />
+    <Property Name="Unit_Rate" Type="Double" />
+    <Property Name="Dispatch_Value" Type="Double" />
+    <Property Name="No_of_Packed_Item" Type="Double" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Acceptance_Status" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="is_Stk_Update" Type="Boolean" />
+    <Property Name="Converted_Unit_Value" Type="Double" />
+    <Property Name="Tally_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Master_Id" Type="Int32" />
+    <Property Name="HSN_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_GST" Type="Double" />
+    <Property Name="CGST" Type="Double" />
+    <Property Name="SGST" Type="Double" />
+  </EntityType>
+  <EntityType Name="Dispatch_NUM_Generation">
+    <Key>
+      <PropertyRef Name="Dispatch_Num_Gen_Id" />
+    </Key>
+    <Property Name="Dispatch_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Dispatch_SKU_Line_Items">
+    <Key>
+      <PropertyRef Name="Dispatch_SKU_Line_Items_Id" />
+    </Key>
+    <Property Name="Dispatch_SKU_Line_Items_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dispatch_Line_Id" Type="Int32" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="Dispatch_Qty" Type="Double" />
+    <Property Name="Barcode" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Batch_Number" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Dispatch_Supplier_Track">
+    <Key>
+      <PropertyRef Name="Dispatch_Track_Id" />
+    </Key>
+    <Property Name="Dispatch_Track_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dispatch_Id" Type="Int32" Nullable="false" />
+    <Property Name="Dispatch_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_Line_Id" Type="Int32" />
+    <Property Name="INW_id" Type="Int32" />
+    <Property Name="GRN_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GRN_Line_Id" Type="Int32" />
+    <Property Name="Stock_ID" Type="Int32" />
+    <Property Name="Stock_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_ID" Type="Int32" />
+    <Property Name="Supplier" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Size" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Weight_Type_Id" Type="Int32" />
+    <Property Name="Pack_Weight_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Billed_Qty" Type="Double" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="DateTime" Precision="0" />
+    <Property Name="UpdateBy" Type="DateTime" Precision="0" />
+    <Property Name="Dispatch_pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Dispatch_Supplier_Track1" Relationship="LEAFDBModelLocal.FK_Dispatch_Supplier_Track_Dispatch_Supplier_Track" FromRole="Dispatch_Supplier_Track" ToRole="Dispatch_Supplier_Track1" />
+    <NavigationProperty Name="Dispatch_Supplier_Track2" Relationship="LEAFDBModelLocal.FK_Dispatch_Supplier_Track_Dispatch_Supplier_Track" FromRole="Dispatch_Supplier_Track1" ToRole="Dispatch_Supplier_Track" />
+  </EntityType>
+  <EntityType Name="Estimated_Stock">
+    <Key>
+      <PropertyRef Name="Est_Stock_Id" />
+    </Key>
+    <Property Name="Est_Stock_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Est_Stock_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="Supplier_Id" Type="Int32" />
+    <Property Name="Supplier_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Size" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Weight_Type_Id" Type="Int32" />
+    <Property Name="Pack_Weight_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Closing_Qty" Type="Double" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Closing_Date_Time" Type="DateTime" Precision="0" />
+    <Property Name="Aging" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Floor_Supervisor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Estimated_Stock_NUM_Generation">
+    <Key>
+      <PropertyRef Name="Est_Num_Gen_Id" />
+    </Key>
+    <Property Name="Est_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Est_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ExerciseTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userid" Type="Int32" />
+    <Property Name="menuid" Type="Int32" />
+    <Property Name="idsString" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GRN_Consumables">
+    <Key>
+      <PropertyRef Name="GRN_Consumables_Id" />
+    </Key>
+    <Property Name="GRN_Consumables_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GRN_Line_Id_FK" Type="Int32" Nullable="false" />
+    <Property Name="SKU_Id" Type="Int32" Nullable="false" />
+    <Property Name="Grade" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Consumable_Qty" Type="Double" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="GRN_Creation">
+    <Key>
+      <PropertyRef Name="INW_Id" />
+    </Key>
+    <Property Name="INW_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GRN_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PO_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CDN_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GRN_Rls_Date" Type="DateTime" Precision="0" />
+    <Property Name="STN_DC_Id" Type="Int32" />
+    <Property Name="STN_DC_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="STN_DC_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Vehicle_No" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Sales_Person_Id" Type="Int32" />
+    <Property Name="Sales_Person_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Id" Type="Int32" />
+    <Property Name="Route_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Route" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Tally_Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Voucher_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Id" Type="Int32" />
+    <Property Name="Supplier_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="is_Syunc" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="GRN_Line_item">
+    <Key>
+      <PropertyRef Name="GRN_Line_Id" />
+    </Key>
+    <Property Name="GRN_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="INW_id" Type="Int32" />
+    <Property Name="GRN_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tally_Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Strinkage_Qty" Type="Double" />
+    <Property Name="PO_QTY" Type="Double" />
+    <Property Name="Billed_Qty" Type="Double" />
+    <Property Name="Price_Book_Id" Type="Int32" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="B_Accepted_Qty" Type="Double" />
+    <Property Name="A_Accepted_Qty" Type="Double" />
+    <Property Name="C_Accepted_Qty" Type="Double" />
+    <Property Name="A_Accepted_Price" Type="Double" />
+    <Property Name="B_Accepted_Price" Type="Double" />
+    <Property Name="C_Accepted_Price" Type="Double" />
+    <Property Name="Is_Deleted" Type="Boolean" />
+    <Property Name="moved" Type="Boolean" />
+    <Property Name="Grade" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="A_Converted_Qty" Type="Double" />
+    <Property Name="B_Converted_Qty" Type="Double" />
+    <Property Name="C_Converted_Qty" Type="Double" />
+    <Property Name="Master_Id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GRN_NUM_Generation">
+    <Key>
+      <PropertyRef Name="GRN_Num_Gen_Id" />
+    </Key>
+    <Property Name="GRN_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GRN_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GRN_SKU_Line_Items">
+    <Key>
+      <PropertyRef Name="GRN_SKU_Line_Items_Id" />
+    </Key>
+    <Property Name="GRN_SKU_Line_Items_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GRN_Line_Id" Type="Int32" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="A_Qty" Type="Double" />
+    <Property Name="B_Qty" Type="Double" />
+    <Property Name="C_Qty" Type="Double" />
+    <Property Name="Barcode" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Batch_Number" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Intermediate_DC">
+    <Key>
+      <PropertyRef Name="Intermediate_DC_Id" />
+    </Key>
+    <Property Name="Intermediate_DC_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Intermediate_DC_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Invoice_Collection">
+    <Key>
+      <PropertyRef Name="INV_Collection_Id" />
+    </Key>
+    <Property Name="INV_Collection_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="INV_Collection_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sales_Person_Id" Type="Int32" />
+    <Property Name="Sales_Person_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="INVOICE_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="INVOICE_Amount" Type="Double" />
+    <Property Name="Collected_Amount" Type="Double" />
+    <Property Name="OutStanding_Amount" Type="Double" />
+    <Property Name="INVOICE_Date" Type="DateTime" Precision="0" />
+    <Property Name="INV_Collection_Excel_Tracking_id" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Invoice_Collection_Excel_Tracking">
+    <Key>
+      <PropertyRef Name="INV_Collection_Excel_Tracking_id" />
+    </Key>
+    <Property Name="INV_Collection_Excel_Tracking_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="No_of_Items" Type="Int32" />
+    <Property Name="Uploaded_Excel_Display_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Uploaded_Excel_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UploadedDate" Type="DateTime" Precision="3" />
+    <Property Name="UploadedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Invoice_Collection_Num_Gen">
+    <Key>
+      <PropertyRef Name="INV_Collection_Num_Gen_Id" />
+    </Key>
+    <Property Name="INV_Collection_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="INV_Collection_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Invoice_Collection_Tracking">
+    <Key>
+      <PropertyRef Name="INV_Collection_Tracking_Id" />
+    </Key>
+    <Property Name="INV_Collection_Tracking_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="INV_Collection_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sales_Person_Id" Type="Int32" />
+    <Property Name="Sales_Person_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="INVOICE_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="INVOICE_Amount" Type="Double" />
+    <Property Name="Collected_Amount" Type="Double" />
+    <Property Name="OutStanding_Amount" Type="Double" />
+    <Property Name="INVOICE_Date" Type="DateTime" Precision="3" />
+    <Property Name="Action" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Action_DoneBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Date_Of_Action" Type="DateTime" Precision="3" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Invoice_Creation">
+    <Key>
+      <PropertyRef Name="invoice_Id" />
+    </Key>
+    <Property Name="invoice_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Invoice_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_id" Type="Int32" />
+    <Property Name="Customer_Dispatch_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Invoice_Date" Type="DateTime" Precision="0" />
+    <Property Name="Invoice_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DC_ID" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Term_of_Payment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Ref" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Buyer_Order_No" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Order_Date" Type="DateTime" Precision="0" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="is_Invoice_Approved" Type="Boolean" />
+    <Property Name="is_Invoice_approved_user_id" Type="Int32" />
+    <Property Name="is_Invoice_approved_by" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="is_Invoice_approved_date" Type="DateTime" Precision="0" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="is_Syunc" Type="Boolean" />
+    <Property Name="Order_Reference" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Invoice_Creation1" Relationship="LEAFDBModelLocal.FK_Invoice_Creation_Invoice_Creation" FromRole="Invoice_Creation" ToRole="Invoice_Creation1" />
+    <NavigationProperty Name="Invoice_Creation2" Relationship="LEAFDBModelLocal.FK_Invoice_Creation_Invoice_Creation" FromRole="Invoice_Creation1" ToRole="Invoice_Creation" />
+  </EntityType>
+  <EntityType Name="Invoice_Line_item">
+    <Key>
+      <PropertyRef Name="Invoice_Line_Id" />
+    </Key>
+    <Property Name="Invoice_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Invoice_Id" Type="Int32" />
+    <Property Name="Invoice_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_Line_id" Type="Int32" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Size" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Return_Qty" Type="Double" />
+    <Property Name="Invoice_Qty" Type="Double" />
+    <Property Name="Rate" Type="Double" />
+    <Property Name="Discount" Type="Double" />
+    <Property Name="Invoice_Amount" Type="Double" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_Qty" Type="Double" />
+    <Property Name="Converted_Unit_Value" Type="Double" />
+    <Property Name="Tally_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HSN_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_GST" Type="Double" />
+    <Property Name="CGST" Type="Double" />
+    <Property Name="SGST" Type="Double" />
+  </EntityType>
+  <EntityType Name="Invoice_NUM_Generation">
+    <Key>
+      <PropertyRef Name="Invoice_Num_Gen_Id" />
+    </Key>
+    <Property Name="Invoice_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Invoice_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Label_Fields">
+    <Key>
+      <PropertyRef Name="Field_Id" />
+    </Key>
+    <Property Name="Field_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Field_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Data_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Size" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Location_Master">
+    <Key>
+      <PropertyRef Name="Location_Id" />
+    </Key>
+    <Property Name="Location_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="County" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PinCode" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Id" Type="Int32" />
+    <Property Name="Region_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Material_Master">
+    <Key>
+      <PropertyRef Name="Material_Id" />
+    </Key>
+    <Property Name="Material_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Material_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Material_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Id" Type="Int32" />
+    <Property Name="Location_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Id" Type="Int32" />
+    <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Size" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Weight_Type_Id" Type="Int32" />
+    <Property Name="Pack_Weight_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Is_Deleted" Type="Boolean" />
+    <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Is_Sync" Type="Boolean" />
+    <Property Name="Material_Auto_Gen_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HSN_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_GST" Type="Double" />
+    <Property Name="CGST" Type="Double" />
+    <Property Name="SGST" Type="Double" />
+  </EntityType>
+  <EntityType Name="Material_Master_Num_Gen">
+    <Key>
+      <PropertyRef Name="Material_Master_Num_Gen_Id" />
+    </Key>
+    <Property Name="Material_Master_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Material_Master_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="MaterialSource">
+    <Key>
+      <PropertyRef Name="MaterialSource_Id" />
+    </Key>
+    <Property Name="MaterialSource_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Material_Source_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Menu_Master">
+    <Key>
+      <PropertyRef Name="Menu_Id" />
+    </Key>
+    <Property Name="Menu_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Menu_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Url" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Icon_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NG_Class" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Parent_id" Type="Int32" />
+    <Property Name="Sub_id" Type="Int32" />
+    <Property Name="Sub_Class" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Position" Type="Int32" />
+    <Property Name="Menu_Previlleges" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Multiple_CSI_tracking">
+    <Key>
+      <PropertyRef Name="Multiple_CSI_tracking_id" />
+    </Key>
+    <Property Name="Multiple_CSI_tracking_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="No_of_CSI" Type="Int32" />
+    <Property Name="Uploaded_Excel_Display_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Uploaded_Excel_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateBy" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PaymentCycle">
+    <Key>
+      <PropertyRef Name="PaymentCycle_Id" />
+    </Key>
+    <Property Name="PaymentCycle_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Payment_Cycle_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PaymentType">
+    <Key>
+      <PropertyRef Name="PaymentType_Id" />
+    </Key>
+    <Property Name="PaymentType_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Payment_Type_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Physical_Stock">
+    <Key>
+      <PropertyRef Name="Phy_Stock_Id" />
+    </Key>
+    <Property Name="Phy_Stock_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Phy_Stock_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="Supplier_Id" Type="Int32" />
+    <Property Name="Supplier_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Size" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Weight_Type_Id" Type="Int32" />
+    <Property Name="Pack_Weight_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Closing_Qty" Type="Double" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Closing_Date_Time" Type="DateTime" Precision="0" />
+    <Property Name="Aging" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Floor_Supervisor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="is_Syunc" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PinCode">
+    <Key>
+      <PropertyRef Name="Code_Id" />
+    </Key>
+    <Property Name="Code_Id" Type="Int32" Nullable="false" />
+    <Property Name="PinCode1" Type="Double" />
+    <Property Name="City" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PO_NUM_Generation">
+    <Key>
+      <PropertyRef Name="PO_Num_Gen_Id" />
+    </Key>
+    <Property Name="PO_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PO_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PO_Rate_Change_Audit">
+    <Key>
+      <PropertyRef Name="Po_Rate_audit_Id" />
+    </Key>
+    <Property Name="Po_Rate_audit_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Po_id" Type="Int32" />
+    <Property Name="PO_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PO_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PO_Line_Id" Type="Int32" />
+    <Property Name="PO_RLS_date" Type="DateTime" Precision="0" />
+    <Property Name="Supplier_Id" Type="Int32" />
+    <Property Name="Supplier_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Qty" Type="Double" />
+    <Property Name="A_Grade_Qty" Type="Double" />
+    <Property Name="B_Grade_Qty" Type="Double" />
+    <Property Name="A_Grade_Price" Type="Double" />
+    <Property Name="B_Grade_Price" Type="Double" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PO_RequitionedBy">
+    <Key>
+      <PropertyRef Name="PO_Req_Id" />
+    </Key>
+    <Property Name="PO_Req_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PO_Rqe_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PO_type">
+    <Key>
+      <PropertyRef Name="PO_Req_Id" />
+    </Key>
+    <Property Name="PO_Req_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PO_Rqe_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Printed_Barcode_Details">
+    <Key>
+      <PropertyRef Name="Printed_Barcode_ID" />
+    </Key>
+    <Property Name="Printed_Barcode_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Generated_Bar_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <Property Name="Customer_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Template_Id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Template_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Product_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Packed_On" Type="DateTime" Precision="0" />
+    <Property Name="Best_Before" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Number_Of_Copies" Type="Int32" />
+    <Property Name="FSSAI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="SKU_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Leaf_flag" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="Double" />
+    <Property Name="EAN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Updated_Date" Type="DateTime" Precision="0" />
+    <Property Name="Updated_By" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Purchase_Order">
+    <Key>
+      <PropertyRef Name="Po_id" />
+    </Key>
+    <Property Name="Po_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PO_Number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PO_RLS_date" Type="DateTime" Precision="0" />
+    <Property Name="Material_Source_id" Type="Int32" />
+    <Property Name="Material_Source" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Id" Type="Int32" />
+    <Property Name="Supplier_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PO_Requisitioned_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PO_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Payment_cycle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Payment_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_Date" Type="DateTime" Precision="0" />
+    <Property Name="PO_raise_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PO_Approve_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PO_Approval_Flag" Type="Boolean" />
+    <Property Name="PO_Approved_date" Type="DateTime" Precision="3" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delete_Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="is_Syunc" Type="Boolean" />
+    <NavigationProperty Name="Purchase_Order1" Relationship="LEAFDBModelLocal.FK_Purchase_Order_Purchase_Order" FromRole="Purchase_Order" ToRole="Purchase_Order1" />
+    <NavigationProperty Name="Purchase_Order2" Relationship="LEAFDBModelLocal.FK_Purchase_Order_Purchase_Order" FromRole="Purchase_Order1" ToRole="Purchase_Order" />
+  </EntityType>
+  <EntityType Name="Purchase_Order_Line_item">
+    <Key>
+      <PropertyRef Name="PO_Line_Id" />
+    </Key>
+    <Property Name="PO_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Po_id" Type="Int32" />
+    <Property Name="PO_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Qty" Type="Double" />
+    <Property Name="A_Grade_Qty" Type="Double" />
+    <Property Name="B_Grade_Qty" Type="Double" />
+    <Property Name="Total_Qty" Type="Double" />
+    <Property Name="Remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="A_Grade_Price" Type="Double" />
+    <Property Name="B_Grade_Price" Type="Double" />
+    <Property Name="Master_Id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Rate_Template">
+    <Key>
+      <PropertyRef Name="Template_ID" />
+    </Key>
+    <Property Name="Template_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Template_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Id" Type="Int32" />
+    <Property Name="Location_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Id" Type="Int32" />
+    <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Valitity_upto" Type="DateTime" Precision="0" />
+    <Property Name="Is_Deleted" Type="Boolean" />
+    <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Category_Id" Type="Int32" />
+    <Property Name="SKU_Type_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Template_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Is_JDM_Synced" Type="Boolean" />
+    <Property Name="Is_BNG_Synced" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Rate_Template_Line_item">
+    <Key>
+      <PropertyRef Name="RT_Line_Id" />
+    </Key>
+    <Property Name="RT_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RT_id" Type="Int32" />
+    <Property Name="Material_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Size" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Selling_price" Type="Double" />
+    <Property Name="MRP" Type="Double" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Weight_Type_Id" Type="Int32" />
+    <Property Name="Pack_Weight_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rate_Template_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Material_Auto_Num_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="HSN_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_GST" Type="Double" />
+    <Property Name="CGST" Type="Double" />
+    <Property Name="SGST" Type="Double" />
+  </EntityType>
+  <EntityType Name="Rate_Template_Num_Gen">
+    <Key>
+      <PropertyRef Name="Rate_Template_Num_Gen_Id" />
+    </Key>
+    <Property Name="Rate_Template_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rate_Template_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Region_Master">
+    <Key>
+      <PropertyRef Name="Region_Id" />
+    </Key>
+    <Property Name="Region_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Region_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Role_Master">
+    <Key>
+      <PropertyRef Name="Role_Id" />
+    </Key>
+    <Property Name="Role_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Is_Delete" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Role_Menu_Access">
+    <Key>
+      <PropertyRef Name="Menu_Role_Access_Id" />
+    </Key>
+    <Property Name="Menu_Role_Access_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role_Id" Type="Int32" />
+    <Property Name="Menu_Id" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Parent_Id" Type="Int32" />
+    <Property Name="Menu_Previlleges" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Role_User_Access">
+    <Key>
+      <PropertyRef Name="User_Role_Access_Id" />
+    </Key>
+    <Property Name="User_Role_Access_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role_Id" Type="Int32" />
+    <Property Name="User_Id" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Route_Area_Master">
+    <Key>
+      <PropertyRef Name="Route_Area_Master_Id" />
+    </Key>
+    <Property Name="Route_Area_Master_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Location_Id" Type="Int32" />
+    <Property Name="Location_Code" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Type" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Pincode" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Area_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Route_Master">
+    <Key>
+      <PropertyRef Name="Route_Master_Id" />
+    </Key>
+    <Property Name="Route_Master_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Orgin_Location_Id" Type="Int32" />
+    <Property Name="Orgin_Location_Code" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Orgin_Location" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Target_Location_Id" Type="Int32" />
+    <Property Name="Target_Location" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Target_Location_Code" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Target_Loc_Type" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Code" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Id" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Route" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Route_Master_Auto_Num_Gen">
+    <Key>
+      <PropertyRef Name="Route_Master_Auto_Gen_Id" />
+    </Key>
+    <Property Name="Route_Master_Auto_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Route_Prefix" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Last_No" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Sales_Route_Mapping">
+    <Key>
+      <PropertyRef Name="Sales_Route_Mapping_Id" />
+    </Key>
+    <Property Name="Sales_Route_Mapping_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sales_Person_Id" Type="Int32" />
+    <Property Name="Sales_Person_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Id" Type="Int32" />
+    <Property Name="Orgin_Location_Id" Type="Int32" />
+    <Property Name="Orgin_Location_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Orgin_Location_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Target_Location_Id" Type="Int32" />
+    <Property Name="Target_Location_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Target_Location_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Alias_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Route_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SKU_Main_Group">
+    <Key>
+      <PropertyRef Name="SKU_Main_Group_Id" />
+    </Key>
+    <Property Name="SKU_Main_Group_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SKU_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SKU_Main_Sub_Mapping">
+    <Key>
+      <PropertyRef Name="SKU_mapping__Id" />
+    </Key>
+    <Property Name="SKU_mapping__Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="SKU_Main_Group_Id" Type="Int32" />
+    <Property Name="SKU_Sub_Group_Id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SKU_Master">
+    <Key>
+      <PropertyRef Name="SKU_Id" />
+    </Key>
+    <Property Name="SKU_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Material_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SKU_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SKU_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Receiving_JDP" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Chennai_Alias" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Coimbatore_Alias" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Ooty_Alias" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Bangalore_Alias" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tally_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HSN_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_GST" Type="Double" />
+    <Property Name="CGST" Type="Double" />
+    <Property Name="SGST" Type="Double" />
+  </EntityType>
+  <EntityType Name="SKU_Sub_Group">
+    <Key>
+      <PropertyRef Name="SKU_Sub_Group_Id" />
+    </Key>
+    <Property Name="SKU_Sub_Group_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SKU_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ST_NUM_Generation">
+    <Key>
+      <PropertyRef Name="ST_Num_Gen_Id" />
+    </Key>
+    <Property Name="ST_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ST_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="STI_Line_item">
+    <Key>
+      <PropertyRef Name="STI_Line_Id" />
+    </Key>
+    <Property Name="STI_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="STI_id" Type="Int32" />
+    <Property Name="STI_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_SubType_Id" Type="Int32" />
+    <Property Name="SKU_SubType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Type_Id" Type="Int32" />
+    <Property Name="Pack_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Size" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Pack_Weight_Type_Id" Type="Int32" />
+    <Property Name="Pack_Weight_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Qty" Type="Double" />
+    <Property Name="Grade" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Total_Qty" Type="Double" />
+    <Property Name="Remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Master_Id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Stirnkage_Summary">
+    <Key>
+      <PropertyRef Name="Stirnkage_Summary_Id" />
+    </Key>
+    <Property Name="Stirnkage_Summary_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Adjustment_Batch_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Adjustment_Freeze" Type="Boolean" />
+    <Property Name="is_Adjusted" Type="Boolean" />
+    <Property Name="Closing_Date" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Stock">
+    <Key>
+      <PropertyRef Name="Stock_Id" />
+    </Key>
+    <Property Name="Stock_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Stock_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Closing_Qty" Type="Double" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Material_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Stock1" Relationship="LEAFDBModelLocal.FK_Stock_Stock" FromRole="Stock" ToRole="Stock1" />
+    <NavigationProperty Name="Stock2" Relationship="LEAFDBModelLocal.FK_Stock_Stock" FromRole="Stock1" ToRole="Stock" />
+  </EntityType>
+  <EntityType Name="Stock_Code_Num_Gen">
+    <Key>
+      <PropertyRef Name="Stock_Num_Gen_Id" />
+    </Key>
+    <Property Name="Stock_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Stock_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Stock_Convertion_Tracking">
+    <Key>
+      <PropertyRef Name="Stock_Convertion_Id" />
+    </Key>
+    <Property Name="Stock_Convertion_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Stock_Id" Type="Int32" Nullable="false" />
+    <Property Name="Stock_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DC_id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Id" Type="Int32" />
+    <Property Name="SKU_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Stock_Qty" Type="Double" />
+    <Property Name="UOM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Created_By" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Updated_By" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Created_Date" Type="DateTime" Precision="0" />
+    <Property Name="Updated_Date" Type="DateTime" Precision="0" />
+    <Property Name="Convert_From_Stock_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Is_Syunc" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Stock_Transaction">
+    <Key>
+      <PropertyRef Name="ST_Tran_ID" />
+    </Key>
+    <Property Name="ST_Tran_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Stock_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="INW_id" Type="Int32" />
+    <Property Name="GRN_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GRN_Line_Id" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="Supplier_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Qty" Type="Double" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Stock_Transaction1" Relationship="LEAFDBModelLocal.FK_Stock_Transaction_Stock_Transaction" FromRole="Stock_Transaction" ToRole="Stock_Transaction1" />
+    <NavigationProperty Name="Stock_Transaction2" Relationship="LEAFDBModelLocal.FK_Stock_Transaction_Stock_Transaction" FromRole="Stock_Transaction1" ToRole="Stock_Transaction" />
+  </EntityType>
+  <EntityType Name="Stock_Transfer_Indent">
+    <Key>
+      <PropertyRef Name="STI_id" />
+    </Key>
+    <Property Name="STI_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="STI_Number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Indent_Raised_by_DC_Id" Type="Int32" />
+    <Property Name="Indent_Raised_by_DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="STI_RLS_date" Type="DateTime" Precision="0" />
+    <Property Name="SKU_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="Material_Source_id" Type="Int32" />
+    <Property Name="Material_Source" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Intermediate_DC_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Delivery_DC_id" Type="Int32" />
+    <Property Name="Delivery_DC_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="STI_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="STI_Delivery_cycle" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Delivery_Date" Type="DateTime" Precision="0" />
+    <Property Name="STI_raise_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="STI_Approve_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="STI_Approval_Flag" Type="Boolean" />
+    <Property Name="STI_Approved_date" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DeleteReason" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Syunc" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Stock_Xfer_Dispatch_Num_Gen">
+    <Key>
+      <PropertyRef Name="Dispatch_Num_Gen_Id" />
+    </Key>
+    <Property Name="Dispatch_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Stock_Xfer_Dispatch_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Strinkage_Stock_Adj_Num_Gen">
+    <Key>
+      <PropertyRef Name="Strinkage_Stock_Adj_Num_Gen_Id" />
+    </Key>
+    <Property Name="Strinkage_Stock_Adj_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Financial_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Strinkage_Stock_Adj_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Strinkage_Stock_Adjustement">
+    <Key>
+      <PropertyRef Name="Strinkage_Stock_Adjustement_Id" />
+    </Key>
+    <Property Name="Strinkage_Stock_Adjustement_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Adjustment_Batch_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Stirnkage_Summary_Id_FK" Type="Int32" />
+    <Property Name="Stock_Id" Type="Int32" />
+    <Property Name="Material_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Stock_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="System_Stock_Qty" Type="Double" />
+    <Property Name="Closing_Qty" Type="Double" />
+    <Property Name="Strinkage_Qty" Type="Double" />
+    <Property Name="Close_Date" Type="DateTime" Precision="0" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Supplier_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Supplier_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="District" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pincode" Type="Int32" />
+    <Property Name="Primary_Contact_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contact_Number" Type="Int64" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Email_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Primary_Email_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Syunc" Type="Boolean" />
+    <Property Name="Collection_Centre_Id" Type="Int32" />
+    <Property Name="Collection_Centre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Date_Of_Birth" Type="DateTime" Precision="0" />
+    <Property Name="Father_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PAN_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Bank_Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Bank_Account_Number" Type="Int64" />
+    <Property Name="Payment_Type_Id" Type="Int32" />
+    <Property Name="Payment_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Photo" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Activation_Date" Type="DateTime" Precision="0" />
+    <Property Name="Supplier_IDCard_Number" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Is_Delete" Type="Boolean" />
+    <Property Name="Farm_location" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Farm_Area" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Tally_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Supplier_Code_Num_Gen">
+    <Key>
+      <PropertyRef Name="Supplier_Num_Gen_Id" />
+    </Key>
+    <Property Name="Supplier_Num_Gen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Stock_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Sync_Checking">
+    <Key>
+      <PropertyRef Name="Sync_id" />
+    </Key>
+    <Property Name="Sync_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sync_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Created_Date" Type="DateTime" Precision="0" />
+    <Property Name="Created_By" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Updated_Date" Type="DateTime" Precision="0" />
+    <Property Name="Updated_By" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Syunc" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Sync_Checking_Line_item">
+    <Key>
+      <PropertyRef Name="SC_Line_Id" />
+    </Key>
+    <Property Name="SC_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sync_id" Type="Int32" />
+    <Property Name="Sync_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Qty" Type="Double" />
+    <Property Name="Grade" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TALLY_MAPPING">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Activity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Module_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VOUCHER_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LEDGER_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LEDGER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GROUP_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="COST_CENTRE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Is_Delete" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Unit">
+    <Key>
+      <PropertyRef Name="Unit_Id" />
+    </Key>
+    <Property Name="Unit_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Unit_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="User_DC_Access">
+    <Key>
+      <PropertyRef Name="DC_Access_User_Id" />
+    </Key>
+    <Property Name="DC_Access_User_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_id" Type="Int32" />
+    <Property Name="User_Id" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="User_Details">
+    <Key>
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="User_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="First_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="Int64" />
+    <Property Name="Address1" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_Login_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="User_Location_Access">
+    <Key>
+      <PropertyRef Name="Location_Access_User_Id" />
+    </Key>
+    <Property Name="Location_Access_User_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Location_id" Type="Int32" />
+    <Property Name="Location_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_Id" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VoucherType">
+    <Key>
+      <PropertyRef Name="VoucherType_Id" />
+    </Key>
+    <Property Name="VoucherType_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MVoucherType_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Wastage_Auto_Num_Gen">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Wastage_Last_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Wastage_Creation">
+    <Key>
+      <PropertyRef Name="Wastage_Id" />
+    </Key>
+    <Property Name="Wastage_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Wastage_Number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Id" Type="Int32" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ref_Id" Type="Int32" />
+    <Property Name="Ref_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Wastage_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Wastage_raisedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Wastage_Rls_Date" Type="DateTime" Precision="0" />
+    <Property Name="is_Deleted" Type="Boolean" />
+    <Property Name="Remark" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Wastage_Approval_Flag" Type="Boolean" />
+    <Property Name="Wastage_approved_user_id" Type="Int32" />
+    <Property Name="Wastage_approved_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reject_Reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Wastage_approved_date" Type="DateTime" Precision="0" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="is_Syunc" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Wastage_Line_item">
+    <Key>
+      <PropertyRef Name="Wastage_Line_Id" />
+    </Key>
+    <Property Name="Wastage_Line_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Wastage_Id" Type="Int32" />
+    <Property Name="Wastage_Number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ref_Id" Type="Int32" />
+    <Property Name="Ref_Line_Id" Type="Int32" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Wastage_Qty" Type="Double" />
+    <Property Name="Wasted_Qty_Price" Type="Double" />
+    <Property Name="Reason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Stock_Reduce_Flag" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="is_Stk_Update" Type="Boolean" />
+    <Property Name="Tally_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Wastage_Supplier_Info">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Wastage_Line_Id" Type="Int32" />
+    <Property Name="Wastage_Number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_ID" Type="Int32" />
+    <Property Name="SKU_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_Id" Type="Int32" />
+    <Property Name="Supplier_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Supplier_name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Stock_History">
+    <Key>
+      <PropertyRef Name="Stock_History_id" />
+      <PropertyRef Name="Stock_Id" />
+    </Key>
+    <Property Name="Stock_History_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Stock_Id" Type="Int32" Nullable="false" />
+    <Property Name="Stock_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type_Id" Type="Int32" />
+    <Property Name="SKU_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Closing_Qty" Type="Double" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Closing_Date" Type="DateTime" Precision="3" />
+    <Property Name="Material_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_CSI2_CUST">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="No_of_SKU" Type="Int32" />
+    <Property Name="No_of_CSI_ORDER" Type="Int32" />
+    <Property Name="No_of_Customer" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_CSI2_CUST_PERCENTBASE">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sku_Count" Type="Int32" />
+    <Property Name="No_of_CSI_ORDER" Type="Int32" />
+    <Property Name="Customer_count" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_CSISTIADD">
+    <Key>
+      <PropertyRef Name="Total_Qty" />
+      <PropertyRef Name="Dispatched_orders" />
+      <PropertyRef Name="Dispatched_qty" />
+    </Key>
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Total_Orders" Type="Int32" />
+    <Property Name="Total_Qty" Type="Double" Nullable="false" />
+    <Property Name="Dispatched_orders" Type="Int32" Nullable="false" />
+    <Property Name="Dispatched_qty" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_CSISTIFORGRAPH">
+    <Key>
+      <PropertyRef Name="Total_Qty" />
+      <PropertyRef Name="Dispatched_orders" />
+      <PropertyRef Name="Dispatched_qty" />
+    </Key>
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Total_Orders" Type="Int32" />
+    <Property Name="Total_Qty" Type="Double" Nullable="false" />
+    <Property Name="Dispatched_orders" Type="Int32" Nullable="false" />
+    <Property Name="Dispatched_qty" Type="Double" Nullable="false" />
+    <Property Name="Created_year" Type="Int32" />
+    <Property Name="Created_Month" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_DISPATCH">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Dispatch_Number" Type="Int32" />
+    <Property Name="TOTAL_QTY" Type="Double" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_GRN">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="No_of_Supplier_Name" Type="Int32" />
+    <Property Name="No_of_SKU" Type="Int32" />
+    <Property Name="Total_Qty" Type="Double" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_PO">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="No_of_PO" Type="Int32" />
+    <Property Name="No_of_Supplier_name" Type="Int32" />
+    <Property Name="TOTAL_Qty" Type="Double" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_STI">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="STI_Number" Type="Int32" />
+    <Property Name="Qty" Type="Double" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_STOCK">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="No_of_SKUs" Type="Int32" />
+    <Property Name="Closing_Qty" Type="Double" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_TOP5CUSTOMER">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Order" Type="Int32" />
+    <Property Name="Customer_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_TOP5SKU">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Closing_Qty" Type="Double" />
+  </EntityType>
+  <EntityType Name="DCDASHBOARD_WASTAGE">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="No_of_SKUs" Type="Int32" />
+    <Property Name="Wastage_Qty" Type="Double" />
+  </EntityType>
+  <EntityType Name="REPORT_12MONTH_BASED_ORDER">
+    <Key>
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="DC_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_Count" Type="Int32" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="REPORT_CSI">
+    <Key>
+      <PropertyRef Name="CSI_Qty" />
+      <PropertyRef Name="CDN_Qty" />
+      <PropertyRef Name="Invoice_Qty" />
+      <PropertyRef Name="Customer_return_qty" />
+      <PropertyRef Name="Fill_Rate" />
+    </Key>
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="SKU_Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CSI_Qty" Type="Double" Nullable="false" />
+    <Property Name="CDN_Qty" Type="Double" Nullable="false" />
+    <Property Name="Invoice_Qty" Type="Double" Nullable="false" />
+    <Property Name="Customer_return_qty" Type="Double" Nullable="false" />
+    <Property Name="Fill_Rate" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REPORT_CUSTOMER_FILL_RATE">
+    <Key>
+      <PropertyRef Name="Modern_Retail" />
+      <PropertyRef Name="General_Trade" />
+      <PropertyRef Name="Distributor" />
+      <PropertyRef Name="Exporter" />
+      <PropertyRef Name="HORECA" />
+      <PropertyRef Name="Market_Sale" />
+      <PropertyRef Name="Wholesaler" />
+      <PropertyRef Name="DC_Sale" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="DC_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="Modern_Retail" Type="Int32" Nullable="false" />
+    <Property Name="General_Trade" Type="Int32" Nullable="false" />
+    <Property Name="Distributor" Type="Int32" Nullable="false" />
+    <Property Name="Exporter" Type="Int32" Nullable="false" />
+    <Property Name="HORECA" Type="Int32" Nullable="false" />
+    <Property Name="Market_Sale" Type="Int32" Nullable="false" />
+    <Property Name="Wholesaler" Type="Int32" Nullable="false" />
+    <Property Name="DC_Sale" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="REPORT_DISPATCH">
+    <Key>
+      <PropertyRef Name="A" />
+      <PropertyRef Name="B" />
+      <PropertyRef Name="Total_qty" />
+    </Key>
+    <Property Name="Delivery_Location_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="No_SKU" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="SKU_Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="A" Type="Double" Nullable="false" />
+    <Property Name="B" Type="Double" Nullable="false" />
+    <Property Name="Total_qty" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REPORT_DISPATCH_PACKTYPE_BASED">
+    <Key>
+      <PropertyRef Name="Branded_Retail" />
+      <PropertyRef Name="Branded_Bulk" />
+      <PropertyRef Name="Un_Branded_Bulk" />
+      <PropertyRef Name="Total" />
+    </Key>
+    <Property Name="Number_of_SKU" Type="Int32" />
+    <Property Name="Delivery_Location_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="SKU_Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Branded_Retail" Type="Double" Nullable="false" />
+    <Property Name="Branded_Bulk" Type="Double" Nullable="false" />
+    <Property Name="Un_Branded_Bulk" Type="Double" Nullable="false" />
+    <Property Name="Total" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REPORT_MONTH_BASED_ORDER">
+    <Key>
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="DC_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Total_Count" Type="Int32" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="REPORT_OF_IN_OUT_SUMMARY">
+    <Key>
+      <PropertyRef Name="IN_SKU_Count" />
+      <PropertyRef Name="IN_TOTAL_QTY" />
+      <PropertyRef Name="OUT_SKU_Count" />
+      <PropertyRef Name="OUT_TOTAL_QTY" />
+    </Key>
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="IN_SKU_Count" Type="Int32" Nullable="false" />
+    <Property Name="IN_TOTAL_QTY" Type="Double" Nullable="false" />
+    <Property Name="OUT_SKU_Count" Type="Int32" Nullable="false" />
+    <Property Name="OUT_TOTAL_QTY" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REPORT_PURCHASE">
+    <Key>
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="Expr1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="SKU_Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Po_Qty" Type="Double" />
+    <Property Name="Recived_Qty" Type="Double" />
+    <Property Name="Fill_Rate" Type="Double" />
+  </EntityType>
+  <EntityType Name="REPORT_STI_DISPATCH">
+    <Key>
+      <PropertyRef Name="Material_Source" />
+    </Key>
+    <Property Name="Material_Source" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="SKU_Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Qty" Type="Double" />
+    <Property Name="Dispatch_Qty" Type="Double" />
+    <Property Name="Fill_Rate" Type="Double" />
+  </EntityType>
+  <EntityType Name="REPORT_STOCK_SUMMARY_UPDATED">
+    <Key>
+      <PropertyRef Name="A_GRADE" />
+      <PropertyRef Name="B_GRADE" />
+      <PropertyRef Name="TOTAL_GRADE_VALUE" />
+    </Key>
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="A_GRADE" Type="Double" Nullable="false" />
+    <Property Name="B_GRADE" Type="Double" Nullable="false" />
+    <Property Name="TOTAL_GRADE_VALUE" Type="Double" Nullable="false" />
+    <Property Name="Number_of_SKU" Type="Int32" />
+  </EntityType>
+  <EntityType Name="REPORT_WASTAGE_QTY">
+    <Key>
+      <PropertyRef Name="Floor" />
+      <PropertyRef Name="Process" />
+      <PropertyRef Name="C_QTY" />
+      <PropertyRef Name="Total_qty" />
+    </Key>
+    <Property Name="DC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKU_Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="Floor" Type="Double" Nullable="false" />
+    <Property Name="Process" Type="Double" Nullable="false" />
+    <Property Name="C_QTY" Type="Double" Nullable="false" />
+    <Property Name="Total_qty" Type="Double" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Dispatch_Creation_Dispatch_Creation">
+    <End Type="LEAFDBModelLocal.Dispatch_Creation" Role="Dispatch_Creation" Multiplicity="1" />
+    <End Type="LEAFDBModelLocal.Dispatch_Creation" Role="Dispatch_Creation1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Dispatch_Creation">
+        <PropertyRef Name="Dispatch_Id" />
+      </Principal>
+      <Dependent Role="Dispatch_Creation1">
+        <PropertyRef Name="Dispatch_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dispatch_Supplier_Track_Dispatch_Supplier_Track">
+    <End Type="LEAFDBModelLocal.Dispatch_Supplier_Track" Role="Dispatch_Supplier_Track" Multiplicity="1" />
+    <End Type="LEAFDBModelLocal.Dispatch_Supplier_Track" Role="Dispatch_Supplier_Track1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Dispatch_Supplier_Track">
+        <PropertyRef Name="Dispatch_Track_Id" />
+      </Principal>
+      <Dependent Role="Dispatch_Supplier_Track1">
+        <PropertyRef Name="Dispatch_Track_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_Creation_Invoice_Creation">
+    <End Type="LEAFDBModelLocal.Invoice_Creation" Role="Invoice_Creation" Multiplicity="1" />
+    <End Type="LEAFDBModelLocal.Invoice_Creation" Role="Invoice_Creation1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice_Creation">
+        <PropertyRef Name="invoice_Id" />
+      </Principal>
+      <Dependent Role="Invoice_Creation1">
+        <PropertyRef Name="invoice_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Purchase_Order_Purchase_Order">
+    <End Type="LEAFDBModelLocal.Purchase_Order" Role="Purchase_Order" Multiplicity="1" />
+    <End Type="LEAFDBModelLocal.Purchase_Order" Role="Purchase_Order1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Purchase_Order">
+        <PropertyRef Name="Po_id" />
+      </Principal>
+      <Dependent Role="Purchase_Order1">
+        <PropertyRef Name="Po_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stock_Stock">
+    <End Type="LEAFDBModelLocal.Stock" Role="Stock" Multiplicity="1" />
+    <End Type="LEAFDBModelLocal.Stock" Role="Stock1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Stock">
+        <PropertyRef Name="Stock_Id" />
+      </Principal>
+      <Dependent Role="Stock1">
+        <PropertyRef Name="Stock_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stock_Transaction_Stock_Transaction">
+    <End Type="LEAFDBModelLocal.Stock_Transaction" Role="Stock_Transaction" Multiplicity="1" />
+    <End Type="LEAFDBModelLocal.Stock_Transaction" Role="Stock_Transaction1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Stock_Transaction">
+        <PropertyRef Name="ST_Tran_ID" />
+      </Principal>
+      <Dependent Role="Stock_Transaction1">
+        <PropertyRef Name="ST_Tran_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

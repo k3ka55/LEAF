@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ae56226ea3ac424b8e9140ee78f7cfc2" Name="Diagram1" ZoomLevel="67">
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Barcode_Fields_Order" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Country" Width="1.5" PointX="4.75" PointY="8.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.CSI_Line_item" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.CSI_NUM_Generation" Width="1.5" PointX="10.75" PointY="8.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Code_Num_Gen" Width="1.5" PointX="4.75" PointY="11.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Dispatch_Num_Gen" Width="1.5" PointX="6.75" PointY="11.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Indent" Width="1.5" PointX="8.75" PointY="11.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Indent_Line_item" Width="1.5" PointX="10.75" PointY="11.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Indent_Num_Gen" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Indent_Template_Mapping" Width="1.5" PointX="12.75" PointY="3.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Label_Auto_Num_Gen" Width="1.5" PointX="12.75" PointY="9.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Label_Template" Width="1.5" PointX="12.75" PointY="12.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_LabelTemplate_Mapping" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Rate_Template_Mapping" Width="1.5" PointX="2.75" PointY="14.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Registration" Width="1.5" PointX="14.75" PointY="3.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_Sale_Indent" Width="1.5" PointX="4.75" PointY="14.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer_SKU_Mapping" Width="1.5" PointX="14.75" PointY="12.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Customer" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DC_Customer_Mapping" Width="1.5" PointX="12.75" PointY="17.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DC_Master" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DC_Supplier_Mapping" Width="1.5" PointX="18.75" PointY="7.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCK_Table" Width="1.5" PointX="18.75" PointY="10.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Delivery_Cycle" Width="1.5" PointX="18.75" PointY="13.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DeliveryAddress" Width="1.5" PointX="18.75" PointY="16.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Dispatch_Consumables" Width="1.5" PointX="6.75" PointY="19.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Dispatch_Creation" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Dispatch_Line_item" Width="1.5" PointX="8.75" PointY="19.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Dispatch_NUM_Generation" Width="1.5" PointX="20.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Dispatch_SKU_Line_Items" Width="1.5" PointX="0.75" PointY="20.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Dispatch_Supplier_Track" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Estimated_Stock" Width="1.5" PointX="20.75" PointY="3.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Estimated_Stock_NUM_Generation" Width="1.5" PointX="10.75" PointY="20.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.ExerciseTable" Width="1.5" PointX="20.75" PointY="11.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.GRN_Consumables" Width="1.5" PointX="12.75" PointY="20.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.GRN_Creation" Width="1.5" PointX="20.75" PointY="14.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.GRN_Line_item" Width="1.5" PointX="14.75" PointY="21.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.GRN_NUM_Generation" Width="1.5" PointX="16.75" PointY="21.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.GRN_SKU_Line_Items" Width="1.5" PointX="22.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Intermediate_DC" Width="1.5" PointX="22.75" PointY="5.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Invoice_Collection" Width="1.5" PointX="22.75" PointY="8.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Invoice_Collection_Excel_Tracking" Width="1.5" PointX="22.75" PointY="14.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Invoice_Collection_Num_Gen" Width="1.5" PointX="22.75" PointY="17.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Invoice_Collection_Tracking" Width="1.5" PointX="18.75" PointY="22.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Invoice_Creation" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Invoice_Line_item" Width="1.5" PointX="22.75" PointY="20.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Invoice_NUM_Generation" Width="1.5" PointX="24.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Label_Fields" Width="1.5" PointX="0.75" PointY="24.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Location_Master" Width="1.5" PointX="24.75" PointY="3.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Material_Master" Width="1.5" PointX="24.75" PointY="8.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Material_Master_Num_Gen" Width="1.5" PointX="10.75" PointY="24.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.MaterialSource" Width="1.5" PointX="24.75" PointY="17.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Menu_Master" Width="1.5" PointX="24.75" PointY="20.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Multiple_CSI_tracking" Width="1.5" PointX="2.75" PointY="25.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.PaymentCycle" Width="1.5" PointX="4.75" PointY="25.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.PaymentType" Width="1.5" PointX="24.75" PointY="25.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Physical_Stock" Width="1.5" PointX="26.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.PinCode" Width="1.5" PointX="26.75" PointY="8.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.PO_NUM_Generation" Width="1.5" PointX="26.75" PointY="11.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.PO_Rate_Change_Audit" Width="1.5" PointX="26.75" PointY="14.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.PO_RequitionedBy" Width="1.5" PointX="26.75" PointY="21.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.PO_type" Width="1.5" PointX="26.75" PointY="24.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Printed_Barcode_Details" Width="1.5" PointX="10.75" PointY="27.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Purchase_Order" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Purchase_Order_Line_item" Width="1.5" PointX="26.75" PointY="27.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Rate_Template" Width="1.5" PointX="28.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Rate_Template_Line_item" Width="1.5" PointX="0.75" PointY="28.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Rate_Template_Num_Gen" Width="1.5" PointX="2.75" PointY="28.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Region_Master" Width="1.5" PointX="4.75" PointY="28.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Role_Master" Width="1.5" PointX="28.75" PointY="7.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Role_Menu_Access" Width="1.5" PointX="28.75" PointY="11.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Role_User_Access" Width="1.5" PointX="28.75" PointY="15.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Route_Area_Master" Width="1.5" PointX="16.75" PointY="28.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Route_Master" Width="1.5" PointX="18.75" PointY="28.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Route_Master_Auto_Num_Gen" Width="1.5" PointX="28.75" PointY="19.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Sales_Route_Mapping" Width="1.5" PointX="20.75" PointY="28.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.SKU_Main_Group" Width="1.5" PointX="28.75" PointY="22.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.SKU_Main_Sub_Mapping" Width="1.5" PointX="22.75" PointY="28.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.SKU_Master" Width="1.5" PointX="28.75" PointY="25.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.SKU_Sub_Group" Width="1.5" PointX="30.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.ST_NUM_Generation" Width="1.5" PointX="30.75" PointY="3.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.STI_Line_item" Width="1.5" PointX="30.75" PointY="6.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Stirnkage_Summary" Width="1.5" PointX="6.75" PointY="30.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Stock" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Stock_Code_Num_Gen" Width="1.5" PointX="12.75" PointY="30.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Stock_Convertion_Tracking" Width="1.5" PointX="30.75" PointY="13.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Stock_Transaction" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Stock_Transfer_Indent" Width="1.5" PointX="30.75" PointY="19.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Stock_Xfer_Dispatch_Num_Gen" Width="1.5" PointX="30.75" PointY="27.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Strinkage_Stock_Adj_Num_Gen" Width="1.5" PointX="30.75" PointY="30.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Strinkage_Stock_Adjustement" Width="1.5" PointX="22.75" PointY="31.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Supplier" Width="1.5" PointX="32.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Supplier_Code_Num_Gen" Width="1.5" PointX="2.75" PointY="32.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Sync_Checking" Width="1.5" PointX="32.75" PointY="9.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Sync_Checking_Line_item" Width="1.5" PointX="32.75" PointY="13.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.TALLY_MAPPING" Width="1.5" PointX="14.75" PointY="32.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Unit" Width="1.5" PointX="32.75" PointY="18.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.User_DC_Access" Width="1.5" PointX="32.75" PointY="21.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.User_Details" Width="1.5" PointX="32.75" PointY="25.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.User_Location_Access" Width="1.5" PointX="32.75" PointY="30.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.VoucherType" Width="1.5" PointX="16.75" PointY="33.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Wastage_Auto_Num_Gen" Width="1.5" PointX="18.75" PointY="33.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Wastage_Creation" Width="1.5" PointX="24.75" PointY="33.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Wastage_Line_item" Width="1.5" PointX="26.75" PointY="33.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Wastage_Supplier_Info" Width="1.5" PointX="28.75" PointY="33.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.Stock_History" Width="1.5" PointX="34.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_CSI2_CUST" Width="1.5" PointX="4.75" PointY="34.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_CSI2_CUST_PERCENTBASE" Width="1.5" PointX="34.75" PointY="6.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_CSISTIADD" Width="1.5" PointX="6.75" PointY="34.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_CSISTIFORGRAPH" Width="1.5" PointX="8.75" PointY="34.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_DISPATCH" Width="1.5" PointX="34.75" PointY="9.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_GRN" Width="1.5" PointX="10.75" PointY="34.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_PO" Width="1.5" PointX="34.75" PointY="12.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_STI" Width="1.5" PointX="34.75" PointY="15.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_STOCK" Width="1.5" PointX="34.75" PointY="18.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_TOP5CUSTOMER" Width="1.5" PointX="34.75" PointY="21.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_TOP5SKU" Width="1.5" PointX="34.75" PointY="24.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.DCDASHBOARD_WASTAGE" Width="1.5" PointX="34.75" PointY="27.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_12MONTH_BASED_ORDER" Width="1.5" PointX="34.75" PointY="30.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_CSI" Width="1.5" PointX="30.75" PointY="34.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_CUSTOMER_FILL_RATE" Width="1.5" PointX="32.75" PointY="34.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_DISPATCH" Width="1.5" PointX="34.75" PointY="33.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_DISPATCH_PACKTYPE_BASED" Width="1.5" PointX="0.75" PointY="35.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_MONTH_BASED_ORDER" Width="1.5" PointX="36.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_OF_IN_OUT_SUMMARY" Width="1.5" PointX="36.75" PointY="3.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_PURCHASE" Width="1.5" PointX="36.75" PointY="7.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_STI_DISPATCH" Width="1.5" PointX="36.75" PointY="10.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_STOCK_SUMMARY_UPDATED" Width="1.5" PointX="36.75" PointY="13.75" />
+        <EntityTypeShape EntityType="LEAFDBModelLocal.REPORT_WASTAGE_QTY" Width="1.5" PointX="16.75" PointY="36.75" />
+        <AssociationConnector Association="LEAFDBModelLocal.FK_Dispatch_Creation_Dispatch_Creation" />
+        <AssociationConnector Association="LEAFDBModelLocal.FK_Dispatch_Supplier_Track_Dispatch_Supplier_Track" />
+        <AssociationConnector Association="LEAFDBModelLocal.FK_Invoice_Creation_Invoice_Creation" />
+        <AssociationConnector Association="LEAFDBModelLocal.FK_Purchase_Order_Purchase_Order" />
+        <AssociationConnector Association="LEAFDBModelLocal.FK_Stock_Stock" />
+        <AssociationConnector Association="LEAFDBModelLocal.FK_Stock_Transaction_Stock_Transaction" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

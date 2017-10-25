@@ -1,0 +1,1230 @@
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\08-nov-2016\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\VS\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\VS\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\VS\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\VS\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\VS\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\VS\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\VS\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\VS\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\VS\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\VS\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\VS\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\VS\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\VS\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\VS\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\VS\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\VS\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\VS\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\VS\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\VS\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\VS\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\VS\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\VS\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\VS\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\VS\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\VS\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\VS\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\VS\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\VS\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\VS\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\VS\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\VS\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\VS\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\VS\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\VS\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\22-11-2016\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\BusinessServices.pdb
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\BusinessEntities.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\DataModel.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.dll
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\DataModel.pdb
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.pdb
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.xml
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.xml
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.xml
+D:\25-11-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.dll
+D:\25-11-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.pdb
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\BusinessServices.pdb
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\AutoMapper.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\BusinessEntities.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\DataModel.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\EntityFramework.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\System.Web.Http.dll
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\DataModel.pdb
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\AutoMapper.pdb
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\AutoMapper.xml
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\EntityFramework.xml
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\System.Web.Http.xml
+D:\Live Leaf\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.dll
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.pdb
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\BusinessServices.pdb
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\AutoMapper.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\BusinessEntities.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\DataModel.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\EntityFramework.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\System.Web.Http.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\DataModel.pdb
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\AutoMapper.pdb
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\AutoMapper.xml
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\EntityFramework.xml
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\System.Web.Http.xml
+D:\30-n0v\with location\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.dll
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.pdb
+D:\30-n0v\with location\WEBAPI\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\05-12-2016\Updated\WEBAPI\BusinessServices\obj\Release\BusinessServices.pdb
+D:\Live Leaf\WEBAPI\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\07-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.pdb
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessServices.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessServices.pdb
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessEntities.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\DataModel.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\DataModel.pdb
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.pdb
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.xml
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.xml
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.xml
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.dll
+D:\Live Leaf\08-12-2016\WEBAPI\BusinessServices\obj\Release\BusinessServices.pdb
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\GIT_LEAF\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\GIT_LEAF\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\Live Leaf\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\Live Leaf\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\Live Leaf\WebApi\BusinessServices\obj\Release\BusinessServices.aa.resources
+D:\Live Leaf\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\Live Leaf\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\Live Leaf\17-12-2016_aft\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\Live Leaf\Live backup\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\Live Leaf\Live backup\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\Live Leaf\Hosted\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\Live Leaf\Hosted\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\Live Leaf\Live backup\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\Live Leaf\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\local\28-dec-2016 leaftemp\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\18-01-2017 leaftlive\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\Excel.4.5.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\Cloud_28-01-2017\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\LEAF UI\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\LEAF UI\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\10-05-2017_backup\crct_sol\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\Excel.4.5.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\24-05-2017________final_modifications\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\LEAF\Current\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\LEAF\Current\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\LEAF\New folder\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\LEAF\New folder\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\LEAF\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\LEAF\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\LEAF\FOR HOSTING\20-07-2017\Working Solution\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\LEAF\wRKING 21-08-2017 DEMO\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\Excel.4.5.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\18-09-2017------live-jdm-demo-bng\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\Excel.4.5.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\WEB API\Layers\2017\live\local_DB_Live\16-10-2017-----live--latest--\WebApi\BusinessServices\obj\Release\BusinessServices.pdb
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\BusinessServices.dll.config
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\BusinessServices.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\BusinessServices.pdb
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\AutoMapper.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\BusinessEntities.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\DataModel.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\DataModelLocal.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\EntityFramework.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\System.Web.Cors.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\System.Web.Http.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\BusinessEntities.pdb
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\DataModelLocal.pdb
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\DataModel.pdb
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\AutoMapper.pdb
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\AutoMapper.xml
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\AutoMapper.Net4.pdb
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\EntityFramework.xml
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\EntityFramework.SqlServer.xml
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\Excel.4.5.pdb
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\Newtonsoft.Json.xml
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\System.Net.Http.Formatting.xml
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\System.Web.Http.xml
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\bin\Release\System.Web.Http.Cors.xml
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.csprojResolveAssemblyReference.cache
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.MaterialResource.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.AutoGenerate.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.STISKU_Type.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.STI_Pack_Type.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.Pack_Type.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Category.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.Invoice_Type.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.Dispatch_Type.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.SKU_Type.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.StatusforSale.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.Status.resources
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.csproj.GenerateResource.Cache
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.dll
+D:\LEAF\19-10-2017 k3\WebApi\BusinessServices\obj\Release\BusinessServices.pdb

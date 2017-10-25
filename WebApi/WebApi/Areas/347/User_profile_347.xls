@@ -1,0 +1,71 @@
+
+    <div class="modal-body tile" style="color:#444">
+      <div class="box box-success box-solid">
+        <div class="box-body">
+          <!-- <div>
+            <p style="padding-left:80px;">LAWRENCEDALE AGRO PROCESSING (I) Pvt Ltd.</p>
+          </div> -->
+          <table style="width: 98%;">
+            <tbody>
+            <tr>
+              <td></td>
+          </tr></tbody></table><table style="width: 98%;">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>
+          <table style="width: 100%;font-size:14px;border: 1px solid #000;border-spacing: 0px;" cellspacing="0.1" cellpadding="0">
+            <tbody>
+            <tr>
+              <td style="border: 1px solid #000">&nbsp;S.No</td>
+              <td style="border: 1px solid #000">&nbsp;SKU SubType</td>
+              <td style="border: 1px solid #000">&nbsp;Item/SKU Name</td>
+              <td style="border: 1px solid #000">&nbsp;Grade</td>
+              <td style="border: 1px solid #000">&nbsp;Pack Type</td>
+              <td style="border: 1px solid #000">&nbsp;Pack Size</td>
+              <td style="border: 1px solid #000">&nbsp;Pack Wgt. Type</td>
+              <td style="border: 1px solid #000">&nbsp;UOM</td>
+              <td style="border: 1px solid #000">&nbsp;Indent Qty</td>
+            </tr>
+            <!-- ngRepeat: lineitem in lineitemsdataimport --><tr style="border: 1px solid rgb(0, 0, 0);" ng-repeat="lineitem in lineitemsdataimport" class="ng-scope">
+              <td align="center" style="border: 1px solid #000" class="ng-binding">1</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Washed</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;AVOCADO</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;A</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Branded Bulk</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;15 kg</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Variable weight (VAR)</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Kgs</td>
+              <td style="border: 1px solid #000;text-align: right;" class="ng-binding">&nbsp;2.00</td>
+            </tr><!-- end ngRepeat: lineitem in lineitemsdataimport --><tr style="border: 1px solid #000" ng-repeat="lineitem in lineitemsdataimport" class="ng-scope">
+              <td align="center" style="border: 1px solid #000" class="ng-binding">2</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Washed</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;BEETROOT LOCAL</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;B</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Branded Retail</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;15 kg</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Variable weight (VAR)</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Kgs</td>
+              <td style="border: 1px solid #000;text-align: right;" class="ng-binding">&nbsp;4.00</td>
+            </tr><!-- end ngRepeat: lineitem in lineitemsdataimport --><tr style="border: 1px solid #000" ng-repeat="lineitem in lineitemsdataimport" class="ng-scope">
+              <td align="center" style="border: 1px solid #000" class="ng-binding">3</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Washed</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;CARROT (UNWASHED)</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;A</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Branded Retail</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;100 kg</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Variable weight (VAR)</td>
+              <td style="border: 1px solid #000" class="ng-binding">&nbsp;Kgs</td>
+              <td style="border: 1px solid #000;text-align: right;" class="ng-binding">&nbsp;6.00</td>
+            </tr><!-- end ngRepeat: lineitem in lineitemsdataimport -->
+            </tbody>
+          </table>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+    </div>
+    <!-- <div ng-include src="'views/tmpl/wastage/wastageexcel.html'"></div> -->
+  

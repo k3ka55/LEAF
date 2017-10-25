@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a0ebfeebeda3452fa0ae33ec7d27ac41" Name="Diagram1">
+        <EntityTypeShape EntityType="leafstockModel.Menu_Access" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="leafstockModel.Menu_List" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="leafstockModel.Product_Details" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="leafstockModel.Purchase_Customer_Details" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="leafstockModel.Sales_Customer_Details" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="leafstockModel.User_Details" Width="1.5" PointX="4.75" PointY="5.75" />
+        <EntityTypeShape EntityType="leafstockModel.User_Location" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="leafstockModel.User_Role" Width="1.5" PointX="6.75" PointY="3.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

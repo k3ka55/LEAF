@@ -1,0 +1,27 @@
+﻿
+LIVE MYVYOM:
+    <!--<add name="LEAFDBEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=49.50.79.229;initial catalog=LEAFDB;persist security info=True;user id=LEAF;password=LEAF;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+    <!--<add name="LEAFDBEntitiesLocal" connectionString="metadata=res://*/Model2.csdl|res://*/Model2.ssdl|res://*/Model2.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=49.50.79.229;initial catalog=LEAFDB;user id=LEAF;password=LEAF;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+
+KEERTHI LOCAL:
+    <add name="LEAFDBEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-CRMLF04\SQLSERVER1234;initial catalog=LEAFDB;persist security info=True;user id=LEAF;password=LEAF;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="LEAFDBEntitiesLocal" connectionString="metadata=res://*/Model2.csdl|res://*/Model2.ssdl|res://*/Model2.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-CRMLF04\SQLSERVER1234;initial catalog=LEAFDB;persist security info=True;user id=LEAF;password=LEAF;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+ 
+METAPLOREDEMO:
+    <!--<add name="LEAFDBEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=103.21.58.193;initial catalog=LEAFDB;user id=LEAFDB;password=MetaPlore#123;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="LEAFDBEntitiesLocal" connectionString="metadata=res://*/Model2.csdl|res://*/Model2.ssdl|res://*/Model2.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=103.21.58.193;initial catalog=LEAFDB;user id=LEAFDB;password=MetaPlore#123;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+
+CHENNAI LOCAL: AS 1ST DB
+    <!--<add name="LEAFDBEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-4C4K3VM;initial catalog=LEAFDB;persist security info=True;user id=LEAF;password=LEAF;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+ 
+JDM LOCAL:
+     <add name="LEAFDBEntitiesLocal" connectionString="metadata=res://*/Model2.csdl|res://*/Model2.ssdl|res://*/Model2.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=49.50.79.229;initial catalog=LEAFDB;user id=LEAF;password=LEAF;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+	 <add name="LEAFDBEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-CUJ0UB8\SQLEXPRESS;initial catalog=LEAFDB;persist security info=True;user id=LEAF;password=LEAF;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+
+METAPLOREDEMO: AS 2ND DB
+    <!--<add name="LEAFDBEntitiesLocal" connectionString="metadata=res://*/Model2.csdl|res://*/Model2.ssdl|res://*/Model2.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=103.21.58.193;initial catalog=LEAFDB;user id=LEAFDB;password=MetaPlore#123;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+
+
+BNG LOCAL:
+     <add name="LEAFDBEntitiesLocal" connectionString="metadata=res://*/Model2.csdl|res://*/Model2.ssdl|res://*/Model2.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=49.50.79.229;initial catalog=LEAFDB;user id=LEAF;password=LEAF;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+  <add name="LEAFDBEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-B3VG8UT\SQLEXPRESS;initial catalog=LEAFDB;persist security info=True;user id=LEAF;password=LEAF;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />

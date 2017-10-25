@@ -1,0 +1,2865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LEAFDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DEMOLEAF.dbo.aa' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="aa">
+          <Property Name="Material_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="SKU_Id" Type="int" />
+          <Property Name="SKU_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="SKU_Type_Id" Type="int" />
+          <Property Name="SKU_Type" Type="nvarchar" MaxLength="255" />
+          <Property Name="SKU_SubType_Id" Type="int" />
+          <Property Name="SKU_SubType" Type="nvarchar" MaxLength="255" />
+          <Property Name="Pack_Type_Id" Type="int" />
+          <Property Name="Pack_Type" Type="nvarchar" MaxLength="255" />
+          <Property Name="Pack_Size" Type="nvarchar" MaxLength="255" />
+          <Property Name="Pack_Weight_Type_Id" Type="int" />
+          <Property Name="Pack_Weight_Type" Type="nvarchar" MaxLength="255" />
+          <Property Name="Location_Code" Type="varchar" MaxLength="250" />
+          <Property Name="UOM" Type="nvarchar" MaxLength="255" />
+          <Property Name="Grade" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DEMOLEAF.dbo.all pin' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="all pin">
+          <Property Name="A" Type="nvarchar" MaxLength="255" />
+          <Property Name="B" Type="nvarchar" MaxLength="255" />
+          <Property Name="C" Type="nvarchar" MaxLength="255" />
+          <Property Name="D" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityType Name="Barcode_Fields_Order">
+    <Key>
+      <PropertyRef Name="Field_Id" />
+    </Key>
+    <Property Name="Field_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Field1" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field2" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field3" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field4" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field5" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field6" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field7" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field8" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field9" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field10" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field11" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field12" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field13" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field14" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field15" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field16" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field17" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field18" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field19" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Field20" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="County_Id" />
+    </Key>
+    <Property Name="County_Id" Type="int" Nullable="false" />
+    <Property Name="CountryName" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="CSI_Line_item">
+    <Key>
+      <PropertyRef Name="CSI_Line_Id" />
+    </Key>
+    <Property Name="CSI_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CSI_id" Type="int" />
+    <Property Name="CSI_Number" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Weight_Type_Id" Type="int" />
+    <Property Name="Pack_Weight_Type" Type="varchar" MaxLength="255" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="100" />
+    <Property Name="Indent_Qty" Type="float" />
+    <Property Name="Remark" Type="varchar" MaxLength="1000" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="price" Type="float" />
+    <Property Name="Master_Id" Type="int" />
+    <Property Name="HSN_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Total_GST" Type="float" />
+    <Property Name="CGST" Type="float" />
+    <Property Name="SGST" Type="float" />
+  </EntityType>
+  <EntityType Name="CSI_NUM_Generation">
+    <Key>
+      <PropertyRef Name="CSI_Num_Gen_Id" />
+    </Key>
+    <Property Name="CSI_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="CSI_Last_Number" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Customer_Code_Num_Gen">
+    <Key>
+      <PropertyRef Name="Customer_Num_Gen_Id" />
+    </Key>
+    <Property Name="Customer_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Customer_Dispatch_Num_Gen">
+    <Key>
+      <PropertyRef Name="Dispatch_Num_Gen_Id" />
+    </Key>
+    <Property Name="Dispatch_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Dispatch_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Customer_Indent">
+    <Key>
+      <PropertyRef Name="Indent_ID" />
+    </Key>
+    <Property Name="Indent_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Indent_Name" Type="varchar" MaxLength="100" />
+    <Property Name="DC_Id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Location_Id" Type="int" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Region_Id" Type="int" />
+    <Property Name="Region" Type="varchar" MaxLength="50" />
+    <Property Name="Indent_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Customer_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Delivery_Address" Type="varchar" MaxLength="1000" />
+    <Property Name="Dispatch_DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Delivery_cycle" Type="varchar" MaxLength="50" />
+    <Property Name="Delivery_Expected_Date" Type="date" />
+    <Property Name="Delivery_Type" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="20" />
+    <Property Name="Price_Template_ID" Type="int" />
+    <Property Name="Price_Template_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Price_Template_Valitity_upto" Type="date" />
+    <Property Name="Is_Deleted" Type="bit" />
+    <Property Name="Reason" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="Region_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Indent_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Price_Template_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Is_Sync" Type="bit" />
+  </EntityType>
+  <EntityType Name="Customer_Indent_Line_item">
+    <Key>
+      <PropertyRef Name="CI_Line_Id" />
+    </Key>
+    <Property Name="CI_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Indent_ID" Type="int" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="50" />
+    <Property Name="Pack_Weight_Type_Id" Type="int" />
+    <Property Name="Pack_Weight_Type" Type="varchar" MaxLength="50" />
+    <Property Name="UOM" Type="varchar" MaxLength="10" />
+    <Property Name="Grade" Type="varchar" MaxLength="10" />
+    <Property Name="Price" Type="float" />
+    <Property Name="Dispatch_Qty" Type="float" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="Indent_Code" Type="varchar" MaxLength="255" />
+    <Property Name="HSN_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Total_GST" Type="float" />
+    <Property Name="CGST" Type="float" />
+    <Property Name="SGST" Type="float" />
+  </EntityType>
+  <EntityType Name="Customer_Indent_Num_Gen">
+    <Key>
+      <PropertyRef Name="Customer_Indent_Num_Gen_Id" />
+    </Key>
+    <Property Name="Customer_Indent_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Indent_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Customer_Indent_Template_Mapping">
+    <Key>
+      <PropertyRef Name="CIT_Mapping_ID" />
+    </Key>
+    <Property Name="CIT_Mapping_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Indent_ID" Type="int" />
+    <Property Name="Indent_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Indent_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Template_ID" Type="int" />
+    <Property Name="Template_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Template_Name" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="Region_Id" Type="int" />
+    <Property Name="Region_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Region" Type="varchar" MaxLength="100" />
+    <Property Name="DC_Id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Location_Id" Type="int" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Customer_Label_Auto_Num_Gen">
+    <Key>
+      <PropertyRef Name="Cust_Label_Auto_Gen_Id" />
+    </Key>
+    <Property Name="Cust_Label_Auto_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Template_Prefix" Type="varchar" MaxLength="50" />
+    <Property Name="Template_Last_No" Type="int" />
+  </EntityType>
+  <EntityType Name="Customer_Label_Template">
+    <Key>
+      <PropertyRef Name="Cust_Label_Template_Id" />
+    </Key>
+    <Property Name="Cust_Label_Template_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Template_Id" Type="varchar" MaxLength="100" />
+    <Property Name="Template_name" Type="varchar" MaxLength="255" />
+    <Property Name="Template_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Field_Id" Type="int" />
+    <Property Name="Field_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Remarks" Type="varchar" MaxLength="255" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Field_Value" Type="text" />
+  </EntityType>
+  <EntityType Name="Customer_LabelTemplate_Mapping">
+    <Key>
+      <PropertyRef Name="Cust_Label_map_Id" />
+    </Key>
+    <Property Name="Cust_Label_map_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Template_Id" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Customer_Rate_Template_Mapping">
+    <Key>
+      <PropertyRef Name="CRT_Mapping_ID" />
+    </Key>
+    <Property Name="CRT_Mapping_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Template_ID" Type="int" />
+    <Property Name="Template_Name" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="Region_Id" Type="int" />
+    <Property Name="Region_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Region" Type="varchar" MaxLength="100" />
+    <Property Name="DC_Id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Location_Id" Type="int" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Template_Code" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Customer_Registration">
+    <Key>
+      <PropertyRef Name="Cust_Reg_Id" />
+    </Key>
+    <Property Name="Customer_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Parent_Company_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Primary_Contact_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Contact_Number" Type="bigint" />
+    <Property Name="Cust_Reg_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Primary_Email_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Secondary_Email_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Reason" Type="varchar" MaxLength="250" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Location_ID" Type="int" />
+    <Property Name="Region_Id" Type="int" />
+    <Property Name="Region_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Region" Type="varchar" MaxLength="255" />
+    <Property Name="Category_Id" Type="int" />
+    <Property Name="Category" Type="varchar" MaxLength="255" />
+    <Property Name="Servicing_DC_Id" Type="int" />
+    <Property Name="Servicing_DC_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Servicing_DC" Type="varchar" MaxLength="255" />
+    <Property Name="Store_Type_Id" Type="int" />
+    <Property Name="Store_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Engagement_Start_Date" Type="datetime" />
+    <Property Name="Store_Image_Display_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Store_Image_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Store_Owner_Image_Display_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Store_Owner_Image_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Latitude" Type="varchar" MaxLength="255" />
+    <Property Name="Longitude" Type="varchar" MaxLength="255" />
+    <Property Name="Approved_by" Type="varchar" MaxLength="255" />
+    <Property Name="Is_Approved" Type="bit" />
+    <Property Name="Date_Of_Approval" Type="date" />
+    <Property Name="Is_Delete" Type="bit" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="Created_From" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Customer_Sale_Indent">
+    <Key>
+      <PropertyRef Name="CSI_id" />
+    </Key>
+    <Property Name="CSI_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CSI_Number" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="CSI_Raised_date" Type="date" />
+    <Property Name="CSI_Timestamp" Type="datetime" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="CSI_From" Type="varchar" MaxLength="200" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="100" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Delivery_Location_ID" Type="int" />
+    <Property Name="Delivery_Location_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Delivery_cycle" Type="varchar" MaxLength="255" />
+    <Property Name="Delivery_Expected_Date" Type="date" />
+    <Property Name="Delievery_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Delivery_Date" Type="date" />
+    <Property Name="CSI_raised_by" Type="varchar" MaxLength="50" />
+    <Property Name="CSI_Approved_Flag" Type="bit" />
+    <Property Name="CSI_Approved_by" Type="varchar" MaxLength="50" />
+    <Property Name="CSI_Approved_date" Type="date" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="Multiple_CSI_tracking_id_FK" Type="int" />
+    <Property Name="Reason" Type="varchar" MaxLength="255" />
+    <Property Name="is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="CSI_Create_by" Type="int" />
+    <Property Name="CSI_type" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="Indent_Id" Type="int" />
+    <Property Name="Indent_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Rate_Template_Id" Type="int" />
+    <Property Name="Rate_Template_Name" Type="varchar" MaxLength="255" />
+    <Property Name="is_Syunc" Type="bit" />
+    <Property Name="Rate_Template_Valitity_upto" Type="date" />
+    <Property Name="User_Location_Id" Type="int" />
+    <Property Name="User_Location_Code" Type="varchar" MaxLength="50" />
+    <Property Name="User_Location" Type="varchar" MaxLength="50" />
+    <Property Name="User_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Rate_Template_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Indent_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Expected_Route_Id" Type="int" />
+    <Property Name="Expected_Route_Alias_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Expected_Route_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Expected_Delivering_Sales_Person_Id" Type="int" />
+    <Property Name="Expected_Delivering_Sales_Person_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Customer_SKU_Mapping">
+    <Key>
+      <PropertyRef Name="Customer_SKU_Mapping_Id" />
+    </Key>
+    <Property Name="Customer_SKU_Mapping_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_SKU_Name" Type="varchar" MaxLength="255" />
+    <Property Name="UOM" Type="varchar" MaxLength="255" />
+    <Property Name="EAN_Number" Type="varchar" MaxLength="255" />
+    <Property Name="Price" Type="float" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="255" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="Cust_Id" />
+    </Key>
+    <Property Name="Customer_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="Cust_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cust_Reg_Id" Type="int" />
+    <Property Name="Customer_Code" Type="varchar" MaxLength="1000" />
+    <Property Name="Address1" Type="varchar" MaxLength="500" />
+    <Property Name="Sales_Person_Id" Type="int" />
+    <Property Name="Sales_Person_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Route_Id" Type="int" />
+    <Property Name="Route_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Route_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Address2" Type="varchar" MaxLength="500" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="District" Type="varchar" MaxLength="50" />
+    <Property Name="Pincode" Type="int" />
+    <Property Name="Primary_Contact_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Contact_Number" Type="bigint" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Primary_Email_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Secondary_Email_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="50" />
+    <Property Name="is_Syunc" Type="bit" />
+    <Property Name="Parent_Company_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Abbreviation" Type="varchar" MaxLength="255" />
+    <Property Name="Region_Id" Type="int" />
+    <Property Name="Region_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Region" Type="varchar" MaxLength="255" />
+    <Property Name="Category_Id" Type="int" />
+    <Property Name="Category" Type="varchar" MaxLength="255" />
+    <Property Name="Servicing_DC_Id" Type="int" />
+    <Property Name="Servicing_DC" Type="varchar" MaxLength="255" />
+    <Property Name="Store_Type_Id" Type="int" />
+    <Property Name="Store_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Engagement_Type_Id" Type="int" />
+    <Property Name="Engagement_Type" Type="varchar" MaxLength="255" />
+    <Property Name="No_of_Stores" Type="int" />
+    <Property Name="Transaction_Volume" Type="varchar" MaxLength="255" />
+    <Property Name="Engagement_Start_Date" Type="date" />
+    <Property Name="Account_Manger" Type="varchar" MaxLength="255" />
+    <Property Name="Primary_ContactPerson_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Primary_ContactPerson_No" Type="varchar" MaxLength="255" />
+    <Property Name="Category_Head_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Business_Head_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Delivery_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Load_Per_Delivery" Type="float" />
+    <Property Name="Indent_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Delivery_Location_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Delivery_Location_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Delivery_Location_Id" Type="int" />
+    <Property Name="Delivery_Type_Id" Type="int" />
+    <Property Name="Delivery_Address" Type="varchar" MaxLength="1000" />
+    <Property Name="Delivery_Contact_Person" Type="varchar" MaxLength="255" />
+    <Property Name="Delivery_Contact_Person_No" Type="bigint" />
+    <Property Name="GRN_Receive_Type_Id" Type="int" />
+    <Property Name="GRN_Receive_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Return_Policy" Type="varchar" MaxLength="255" />
+    <Property Name="Pricing_Change_Schedule" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Return_Policy_Id" Type="int" />
+    <Property Name="Pricing_Change_Schedule_Id" Type="int" />
+    <Property Name="Payment_Type_Id" Type="int" />
+    <Property Name="Payment_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Credit_Period_Id" Type="int" />
+    <Property Name="Credit_Period" Type="varchar" MaxLength="255" />
+    <Property Name="Payment_Date" Type="varchar" MaxLength="255" />
+    <Property Name="Credit_Limit" Type="float" />
+    <Property Name="Is_Delete" Type="bit" />
+    <Property Name="Credit_Period_Reason" Type="varchar" MaxLength="500" />
+    <Property Name="Price_Change_Shedule_Reason" Type="varchar" MaxLength="500" />
+    <Property Name="Remarks" Type="varchar" MaxLength="255" />
+    <Property Name="Delivery_Days" Type="varchar" MaxLength="1000" />
+    <Property Name="GRN_Receive_Shedule" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Tin_Number" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Pan_Number" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Account_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Bank_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Branch_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Account_Number" Type="varchar" MaxLength="255" />
+    <Property Name="Bank_IFSC_Number" Type="varchar" MaxLength="255" />
+    <Property Name="Location_ID" Type="int" />
+    <Property Name="Store_Type_Other" Type="varchar" MaxLength="255" />
+    <Property Name="Tally_Status" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Ref_Number" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_User_Id" Type="varchar" MaxLength="255" />
+    <Property Name="Password" Type="varchar" MaxLength="255" />
+    <Property Name="Store_Image_Display_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Store_Image_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Store_Owner_Image_Display_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Store_Owner_Image_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Latitude" Type="varchar" MaxLength="255" />
+    <Property Name="Longitude" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_GST_Number" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="DC_Customer_Mapping">
+    <Key>
+      <PropertyRef Name="Dc_Cust_map_Id" />
+    </Key>
+    <Property Name="Cust_Id" Type="int" />
+    <Property Name="Cust_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Dc_Cust_map_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Cust_Code" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DC_Master">
+    <Key>
+      <PropertyRef Name="Dc_Id" />
+    </Key>
+    <Property Name="Dc_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Dc_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Address1" Type="varchar" MaxLength="500" />
+    <Property Name="Address2" Type="varchar" MaxLength="500" />
+    <Property Name="CIN_No" Type="varchar" MaxLength="255" />
+    <Property Name="FSSAI_No" Type="varchar" MaxLength="255" />
+    <Property Name="PAN_No" Type="varchar" MaxLength="255" />
+    <Property Name="CST_No" Type="varchar" MaxLength="255" />
+    <Property Name="TIN_No" Type="varchar" MaxLength="255" />
+    <Property Name="County" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="PinCode" Type="int" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Region" Type="varchar" MaxLength="50" />
+    <Property Name="Region_Id" Type="int" />
+    <Property Name="Region_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Offline_Flag" Type="bit" />
+    <Property Name="GST_Number" Type="varchar" MaxLength="255" />
+    <Property Name="UIN_No" Type="varchar" MaxLength="255" />
+    <Property Name="Total_GST" Type="float" />
+    <Property Name="CGST" Type="float" />
+    <Property Name="SGST" Type="float" />
+  </EntityType>
+  <EntityType Name="DC_Supplier_Mapping">
+    <Key>
+      <PropertyRef Name="Dc_Supplier_map_Id" />
+    </Key>
+    <Property Name="Supplier_ID" Type="int" />
+    <Property Name="Supplier_ Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Dc_Supplier_map_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_id" Type="int" />
+    <Property Name="Supplier_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DCK_Table">
+    <Key>
+      <PropertyRef Name="DCK_ID" />
+    </Key>
+    <Property Name="DCK_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DCK_Field" Type="date" />
+    <Property Name="DCK_Field1" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Delivery_Cycle">
+    <Key>
+      <PropertyRef Name="Delivery_Cycle_Id" />
+    </Key>
+    <Property Name="Delivery_Cycle_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Delivery_Cycle_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="DeliveryAddress">
+    <Key>
+      <PropertyRef Name="Delivery_Address_Id" />
+    </Key>
+    <Property Name="Delivery_Address_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ref_Id" Type="int" />
+    <Property Name="Ref_Obj_Type" Type="varchar" MaxLength="20" />
+    <Property Name="Delivery_Location_Id" Type="int" />
+    <Property Name="Delivery_Location_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Delivery_Location_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Delivery_Time" Type="datetime" />
+    <Property Name="Delivery_Contact_Person_No" Type="bigint" />
+    <Property Name="Delivery_Contact_Person" Type="varchar" MaxLength="50" />
+    <Property Name="Delivery_Address" Type="varchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="Dispatch_Consumables">
+    <Key>
+      <PropertyRef Name="Dispatch_Consumables_Id" />
+    </Key>
+    <Property Name="Dispatch_Consumables_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dispatch_Line_Id_FK" Type="int" />
+    <Property Name="Dispatch_SKU_Line_Items_Id_FK" Type="int" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="Consumable_Qty" Type="float" />
+    <Property Name="Grade" Type="varchar" MaxLength="1000" />
+    <Property Name="UOM" Type="varchar" MaxLength="1000" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Dispatch_Creation">
+    <Key>
+      <PropertyRef Name="Dispatch_Id" />
+    </Key>
+    <Property Name="Dispatch_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dispatched_Location_ID" Type="int" />
+    <Property Name="Dispatch_Location_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_code" Type="varchar" MaxLength="50" />
+    <Property Name="STI_Id" Type="int" />
+    <Property Name="STI_Number" Type="varchar" MaxLength="100" />
+    <Property Name="CSI_Id" Type="int" />
+    <Property Name="CSI_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Acceptance_Status" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Indent_Rls_Date" Type="date" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Delievery_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Dispatch_Number" Type="varchar" MaxLength="20" />
+    <Property Name="Stock_Xfer_Dispatch_Number" Type="varchar" MaxLength="20" />
+    <Property Name="Delivery_Date" Type="date" />
+    <Property Name="Dispatch_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Delivery_done_by" Type="varchar" MaxLength="50" />
+    <Property Name="Dispatch_time_stamp" Type="datetime" />
+    <Property Name="Delivery_Location_ID" Type="int" />
+    <Property Name="Delivery_Location_Code" Type="varchar" MaxLength="100" />
+    <Property Name="Expected_Delivery_date" Type="date" />
+    <Property Name="Expected_Delivery_time" Type="datetime" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="Remark" Type="varchar" MaxLength="255" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="Invoice_Flag" Type="bit" />
+    <Property Name="is_Syunc" Type="bit" />
+    <Property Name="Vehicle_No" Type="varchar" MaxLength="255" />
+    <Property Name="Sales_Person_Id" Type="int" />
+    <Property Name="Sales_Person_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Route_Id" Type="int" />
+    <Property Name="Route_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Route" Type="varchar" MaxLength="255" />
+    <Property Name="Price_Template_ID" Type="int" />
+    <Property Name="Price_Template_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Price_Template_Valitity_upto" Type="date" />
+    <Property Name="Price_Template_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Order_Reference" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Dispatch_Line_item">
+    <Key>
+      <PropertyRef Name="Dispatch_Line_Id" />
+    </Key>
+    <Property Name="Dispatch_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dispatch_Id" Type="int" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Supplier_Id" Type="int" />
+    <Property Name="Supplier_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Supplier_Code" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Weight_Type_Id" Type="int" />
+    <Property Name="Pack_Weight_Type" Type="varchar" MaxLength="255" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Strinkage_Qty" Type="float" />
+    <Property Name="Indent_Qty" Type="float" />
+    <Property Name="Dispatch_Qty" Type="float" />
+    <Property Name="Grade" Type="varchar" MaxLength="50" />
+    <Property Name="Return_Qty" Type="float" />
+    <Property Name="Received_Qty" Type="float" />
+    <Property Name="Accepted_Qty" Type="float" />
+    <Property Name="Unit_Rate" Type="float" />
+    <Property Name="Dispatch_Value" Type="float" />
+    <Property Name="No_of_Packed_Item" Type="float" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Acceptance_Status" Type="varchar" MaxLength="255" />
+    <Property Name="Dispatch_Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Remark" Type="varchar" MaxLength="255" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Stk_Update" Type="bit" />
+    <Property Name="Converted_Unit_Value" Type="float" />
+    <Property Name="Tally_Status" Type="varchar" MaxLength="50" />
+    <Property Name="Master_Id" Type="int" />
+    <Property Name="HSN_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Total_GST" Type="float" />
+    <Property Name="CGST" Type="float" />
+    <Property Name="SGST" Type="float" />
+  </EntityType>
+  <EntityType Name="Dispatch_NUM_Generation">
+    <Key>
+      <PropertyRef Name="Dispatch_Num_Gen_Id" />
+    </Key>
+    <Property Name="Dispatch_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Dispatch_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Dispatch_SKU_Line_Items">
+    <Key>
+      <PropertyRef Name="Dispatch_SKU_Line_Items_Id" />
+    </Key>
+    <Property Name="Dispatch_SKU_Line_Items_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dispatch_Line_Id" Type="int" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="Dispatch_Qty" Type="float" />
+    <Property Name="Barcode" Type="varchar" MaxLength="1000" />
+    <Property Name="Batch_Number" Type="varchar" MaxLength="1000" />
+    <Property Name="UOM" Type="varchar" MaxLength="1000" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Dispatch_Supplier_Track">
+    <Key>
+      <PropertyRef Name="Dispatch_Track_Id" />
+    </Key>
+    <Property Name="Dispatch_Track_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dispatch_Id" Type="int" Nullable="false" />
+    <Property Name="Dispatch_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Dispatch_Line_Id" Type="int" />
+    <Property Name="INW_id" Type="int" />
+    <Property Name="GRN_Number" Type="varchar" MaxLength="50" />
+    <Property Name="GRN_Line_Id" Type="int" />
+    <Property Name="Stock_ID" Type="int" />
+    <Property Name="Stock_code" Type="varchar" MaxLength="50" />
+    <Property Name="Supplier_ID" Type="int" />
+    <Property Name="Supplier" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_name" Type="varchar" MaxLength="255" />
+    <Property Name="Grade" Type="varchar" MaxLength="20" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="50" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Weight_Type_Id" Type="int" />
+    <Property Name="Pack_Weight_Type" Type="varchar" MaxLength="255" />
+    <Property Name="QTY" Type="float" />
+    <Property Name="Price" Type="float" />
+    <Property Name="Billed_Qty" Type="float" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="date" />
+    <Property Name="UpdateBy" Type="date" />
+    <Property Name="Dispatch_pack_Type" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Estimated_Stock">
+    <Key>
+      <PropertyRef Name="Est_Stock_Id" />
+    </Key>
+    <Property Name="Est_Stock_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Est_Stock_code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="Supplier_Id" Type="int" />
+    <Property Name="Supplier_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Supplier_Code" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="100" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="150" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Weight_Type_Id" Type="int" />
+    <Property Name="Pack_Weight_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Closing_Qty" Type="float" />
+    <Property Name="Price" Type="float" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="100" />
+    <Property Name="Closing_Date_Time" Type="date" />
+    <Property Name="Aging" Type="varchar" MaxLength="255" />
+    <Property Name="Floor_Supervisor" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Estimated_Stock_NUM_Generation">
+    <Key>
+      <PropertyRef Name="Est_Num_Gen_Id" />
+    </Key>
+    <Property Name="Est_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Est_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="ExerciseTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userid" Type="int" />
+    <Property Name="menuid" Type="int" />
+    <Property Name="idsString" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="GRN_Consumables">
+    <Key>
+      <PropertyRef Name="GRN_Consumables_Id" />
+    </Key>
+    <Property Name="GRN_Consumables_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GRN_Line_Id_FK" Type="int" Nullable="false" />
+    <Property Name="SKU_Id" Type="int" Nullable="false" />
+    <Property Name="Grade" Type="varchar" MaxLength="50" />
+    <Property Name="Consumable_Qty" Type="float" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="GRN_Creation">
+    <Key>
+      <PropertyRef Name="INW_Id" />
+    </Key>
+    <Property Name="INW_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GRN_Number" Type="varchar" MaxLength="50" />
+    <Property Name="PO_Number" Type="varchar" MaxLength="50" />
+    <Property Name="CDN_Number" Type="varchar" MaxLength="100" />
+    <Property Name="GRN_Rls_Date" Type="date" />
+    <Property Name="STN_DC_Id" Type="int" />
+    <Property Name="STN_DC_Code" Type="varchar" MaxLength="100" />
+    <Property Name="STN_DC_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Vehicle_No" Type="varchar" MaxLength="255" />
+    <Property Name="Sales_Person_Id" Type="int" />
+    <Property Name="Sales_Person_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Route_Id" Type="int" />
+    <Property Name="Route_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Route" Type="varchar" MaxLength="255" />
+    <Property Name="Tally_Status" Type="varchar" MaxLength="10" />
+    <Property Name="Voucher_Type" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="100" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_code" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Supplier_Id" Type="int" />
+    <Property Name="Supplier_code" Type="varchar" MaxLength="50" />
+    <Property Name="Supplier_Name" Type="varchar" MaxLength="100" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="is_Syunc" Type="bit" />
+  </EntityType>
+  <EntityType Name="GRN_Line_item">
+    <Key>
+      <PropertyRef Name="GRN_Line_Id" />
+    </Key>
+    <Property Name="GRN_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="INW_id" Type="int" />
+    <Property Name="GRN_Number" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Tally_Status" Type="varchar" MaxLength="10" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="UOM" Type="varchar" MaxLength="100" />
+    <Property Name="Strinkage_Qty" Type="float" />
+    <Property Name="PO_QTY" Type="float" />
+    <Property Name="Billed_Qty" Type="float" />
+    <Property Name="Price_Book_Id" Type="int" />
+    <Property Name="Price" Type="float" />
+    <Property Name="Remark" Type="varchar" MaxLength="1000" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="B_Accepted_Qty" Type="float" />
+    <Property Name="A_Accepted_Qty" Type="float" />
+    <Property Name="C_Accepted_Qty" Type="float" />
+    <Property Name="A_Accepted_Price" Type="float" />
+    <Property Name="B_Accepted_Price" Type="float" />
+    <Property Name="C_Accepted_Price" Type="float" />
+    <Property Name="Is_Deleted" Type="bit" />
+    <Property Name="moved" Type="bit" />
+    <Property Name="Grade" Type="varchar" MaxLength="50" />
+    <Property Name="A_Converted_Qty" Type="float" />
+    <Property Name="B_Converted_Qty" Type="float" />
+    <Property Name="C_Converted_Qty" Type="float" />
+    <Property Name="Master_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="GRN_NUM_Generation">
+    <Key>
+      <PropertyRef Name="GRN_Num_Gen_Id" />
+    </Key>
+    <Property Name="GRN_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="GRN_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="GRN_SKU_Line_Items">
+    <Key>
+      <PropertyRef Name="GRN_SKU_Line_Items_Id" />
+    </Key>
+    <Property Name="GRN_SKU_Line_Items_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GRN_Line_Id" Type="int" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="A_Qty" Type="float" />
+    <Property Name="B_Qty" Type="float" />
+    <Property Name="C_Qty" Type="float" />
+    <Property Name="Barcode" Type="varchar" MaxLength="1000" />
+    <Property Name="Batch_Number" Type="varchar" MaxLength="1000" />
+    <Property Name="UOM" Type="varchar" MaxLength="1000" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Intermediate_DC">
+    <Key>
+      <PropertyRef Name="Intermediate_DC_Id" />
+    </Key>
+    <Property Name="Intermediate_DC_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Intermediate_DC_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Invoice_Collection">
+    <Key>
+      <PropertyRef Name="INV_Collection_Id" />
+    </Key>
+    <Property Name="INV_Collection_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="INV_Collection_Number" Type="varchar" MaxLength="50" />
+    <Property Name="DC_id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Sales_Person_Id" Type="int" />
+    <Property Name="Sales_Person_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="255" />
+    <Property Name="INVOICE_Number" Type="varchar" MaxLength="255" />
+    <Property Name="INVOICE_Amount" Type="float" />
+    <Property Name="Collected_Amount" Type="float" />
+    <Property Name="OutStanding_Amount" Type="float" />
+    <Property Name="INVOICE_Date" Type="date" />
+    <Property Name="INV_Collection_Excel_Tracking_id" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Invoice_Collection_Excel_Tracking">
+    <Key>
+      <PropertyRef Name="INV_Collection_Excel_Tracking_id" />
+    </Key>
+    <Property Name="INV_Collection_Excel_Tracking_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="No_of_Items" Type="int" />
+    <Property Name="Uploaded_Excel_Display_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Uploaded_Excel_Name" Type="varchar" MaxLength="50" />
+    <Property Name="UploadedDate" Type="datetime" />
+    <Property Name="UploadedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Invoice_Collection_Num_Gen">
+    <Key>
+      <PropertyRef Name="INV_Collection_Num_Gen_Id" />
+    </Key>
+    <Property Name="INV_Collection_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="INV_Collection_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Invoice_Collection_Tracking">
+    <Key>
+      <PropertyRef Name="INV_Collection_Tracking_Id" />
+    </Key>
+    <Property Name="INV_Collection_Tracking_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="INV_Collection_Number" Type="varchar" MaxLength="50" />
+    <Property Name="DC_id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Sales_Person_Id" Type="int" />
+    <Property Name="Sales_Person_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="255" />
+    <Property Name="INVOICE_Number" Type="varchar" MaxLength="255" />
+    <Property Name="INVOICE_Amount" Type="float" />
+    <Property Name="Collected_Amount" Type="float" />
+    <Property Name="OutStanding_Amount" Type="float" />
+    <Property Name="INVOICE_Date" Type="datetime" />
+    <Property Name="Action" Type="varchar" MaxLength="100" />
+    <Property Name="Action_DoneBy" Type="varchar" MaxLength="100" />
+    <Property Name="Date_Of_Action" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Invoice_Creation">
+    <Key>
+      <PropertyRef Name="invoice_Id" />
+    </Key>
+    <Property Name="invoice_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Invoice_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Dispatch_id" Type="int" />
+    <Property Name="Customer_Dispatch_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Invoice_Date" Type="date" />
+    <Property Name="Invoice_Type" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="100" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_code" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="255" />
+    <Property Name="DC_ID" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="100" />
+    <Property Name="Term_of_Payment" Type="varchar" MaxLength="100" />
+    <Property Name="Supplier_Ref" Type="varchar" MaxLength="100" />
+    <Property Name="Buyer_Order_No" Type="varchar" MaxLength="100" />
+    <Property Name="Order_Date" Type="date" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="Remark" Type="varchar" MaxLength="255" />
+    <Property Name="is_Invoice_Approved" Type="bit" />
+    <Property Name="is_Invoice_approved_user_id" Type="int" />
+    <Property Name="is_Invoice_approved_by" Type="varchar" MaxLength="255" />
+    <Property Name="is_Invoice_approved_date" Type="date" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Syunc" Type="bit" />
+    <Property Name="Order_Reference" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Invoice_Line_item">
+    <Key>
+      <PropertyRef Name="Invoice_Line_Id" />
+    </Key>
+    <Property Name="Invoice_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Invoice_Id" Type="int" />
+    <Property Name="Invoice_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Dispatch_Line_id" Type="int" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="255" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="20" />
+    <Property Name="Return_Qty" Type="float" />
+    <Property Name="Invoice_Qty" Type="float" />
+    <Property Name="Rate" Type="float" />
+    <Property Name="Discount" Type="float" />
+    <Property Name="Invoice_Amount" Type="float" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="Dispatch_Qty" Type="float" />
+    <Property Name="Converted_Unit_Value" Type="float" />
+    <Property Name="Tally_Status" Type="varchar" MaxLength="50" />
+    <Property Name="HSN_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Total_GST" Type="float" />
+    <Property Name="CGST" Type="float" />
+    <Property Name="SGST" Type="float" />
+  </EntityType>
+  <EntityType Name="Invoice_NUM_Generation">
+    <Key>
+      <PropertyRef Name="Invoice_Num_Gen_Id" />
+    </Key>
+    <Property Name="Invoice_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Invoice_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Label_Fields">
+    <Key>
+      <PropertyRef Name="Field_Id" />
+    </Key>
+    <Property Name="Field_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Field_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Data_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="255" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Location_Master">
+    <Key>
+      <PropertyRef Name="Location_Id" />
+    </Key>
+    <Property Name="Location_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Location_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Address1" Type="varchar" MaxLength="500" />
+    <Property Name="Address2" Type="varchar" MaxLength="500" />
+    <Property Name="County" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="Region" Type="varchar" MaxLength="50" />
+    <Property Name="PinCode" Type="int" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Region_Id" Type="int" />
+    <Property Name="Region_Code" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Material_Master">
+    <Key>
+      <PropertyRef Name="Material_Id" />
+    </Key>
+    <Property Name="Material_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Material_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Material_Name" Type="varchar" MaxLength="100" />
+    <Property Name="DC_Id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Location_Id" Type="int" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Region_Id" Type="int" />
+    <Property Name="Region" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="20" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="50" />
+    <Property Name="Pack_Weight_Type_Id" Type="int" />
+    <Property Name="Pack_Weight_Type" Type="varchar" MaxLength="50" />
+    <Property Name="UOM" Type="varchar" MaxLength="10" />
+    <Property Name="Grade" Type="varchar" MaxLength="10" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="Is_Deleted" Type="bit" />
+    <Property Name="Reason" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Is_Sync" Type="bit" />
+    <Property Name="Material_Auto_Gen_Code" Type="varchar" MaxLength="50" />
+    <Property Name="HSN_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Total_GST" Type="float" />
+    <Property Name="CGST" Type="float" />
+    <Property Name="SGST" Type="float" />
+  </EntityType>
+  <EntityType Name="Material_Master_Num_Gen">
+    <Key>
+      <PropertyRef Name="Material_Master_Num_Gen_Id" />
+    </Key>
+    <Property Name="Material_Master_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Material_Master_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="MaterialSource">
+    <Key>
+      <PropertyRef Name="MaterialSource_Id" />
+    </Key>
+    <Property Name="MaterialSource_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Material_Source_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Menu_Master">
+    <Key>
+      <PropertyRef Name="Menu_Id" />
+    </Key>
+    <Property Name="Menu_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Menu_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Url" Type="varchar" MaxLength="1000" />
+    <Property Name="Icon_Name" Type="varchar" MaxLength="50" />
+    <Property Name="NG_Class" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Parent_id" Type="int" />
+    <Property Name="Sub_id" Type="int" />
+    <Property Name="Sub_Class" Type="varchar" MaxLength="255" />
+    <Property Name="Position" Type="int" />
+    <Property Name="Menu_Previlleges" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Multiple_CSI_tracking">
+    <Key>
+      <PropertyRef Name="Multiple_CSI_tracking_id" />
+    </Key>
+    <Property Name="Multiple_CSI_tracking_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="No_of_CSI" Type="int" />
+    <Property Name="Uploaded_Excel_Display_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Uploaded_Excel_Name" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="PaymentCycle">
+    <Key>
+      <PropertyRef Name="PaymentCycle_Id" />
+    </Key>
+    <Property Name="PaymentCycle_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Payment_Cycle_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="PaymentType">
+    <Key>
+      <PropertyRef Name="PaymentType_Id" />
+    </Key>
+    <Property Name="PaymentType_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Payment_Type_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Physical_Stock">
+    <Key>
+      <PropertyRef Name="Phy_Stock_Id" />
+    </Key>
+    <Property Name="Phy_Stock_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Phy_Stock_code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="Supplier_Id" Type="int" />
+    <Property Name="Supplier_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Supplier_Code" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="100" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="150" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Weight_Type_Id" Type="int" />
+    <Property Name="Pack_Weight_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Closing_Qty" Type="float" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="100" />
+    <Property Name="Closing_Date_Time" Type="date" />
+    <Property Name="Aging" Type="varchar" MaxLength="255" />
+    <Property Name="Floor_Supervisor" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="is_Syunc" Type="bit" />
+  </EntityType>
+  <EntityType Name="PinCode">
+    <Key>
+      <PropertyRef Name="Code_Id" />
+    </Key>
+    <Property Name="Code_Id" Type="int" Nullable="false" />
+    <Property Name="PinCode" Type="float" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="State" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="PO_NUM_Generation">
+    <Key>
+      <PropertyRef Name="PO_Num_Gen_Id" />
+    </Key>
+    <Property Name="PO_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="PO_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="PO_Rate_Change_Audit">
+    <Key>
+      <PropertyRef Name="Po_Rate_audit_Id" />
+    </Key>
+    <Property Name="Po_Rate_audit_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Po_id" Type="int" />
+    <Property Name="PO_Number" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="PO_Type" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="20" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="PO_Line_Id" Type="int" />
+    <Property Name="PO_RLS_date" Type="date" />
+    <Property Name="Supplier_Id" Type="int" />
+    <Property Name="Supplier_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Supplier_Code" Type="varchar" MaxLength="50" />
+    <Property Name="UOM" Type="varchar" MaxLength="10" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="A_Grade_Qty" Type="float" />
+    <Property Name="B_Grade_Qty" Type="float" />
+    <Property Name="A_Grade_Price" Type="float" />
+    <Property Name="B_Grade_Price" Type="float" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PO_RequitionedBy">
+    <Key>
+      <PropertyRef Name="PO_Req_Id" />
+    </Key>
+    <Property Name="PO_Req_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PO_Rqe_Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PO_type">
+    <Key>
+      <PropertyRef Name="PO_Req_Id" />
+    </Key>
+    <Property Name="PO_Req_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PO_Rqe_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Printed_Barcode_Details">
+    <Key>
+      <PropertyRef Name="Printed_Barcode_ID" />
+    </Key>
+    <Property Name="Printed_Barcode_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Generated_Bar_Code" Type="varchar" MaxLength="255" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Template_Id" Type="varchar" MaxLength="255" />
+    <Property Name="Template_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Product_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Packed_On" Type="date" />
+    <Property Name="Best_Before" Type="varchar" MaxLength="255" />
+    <Property Name="Number_Of_Copies" Type="int" />
+    <Property Name="FSSAI" Type="nvarchar" MaxLength="100" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_Leaf_flag" Type="varchar" MaxLength="255" />
+    <Property Name="UOM" Type="varchar" MaxLength="255" />
+    <Property Name="Quantity" Type="float" />
+    <Property Name="EAN" Type="nvarchar" MaxLength="100" />
+    <Property Name="Price" Type="float" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="150" />
+    <Property Name="Updated_Date" Type="date" />
+    <Property Name="Updated_By" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Purchase_Order">
+    <Key>
+      <PropertyRef Name="Po_id" />
+    </Key>
+    <Property Name="Po_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PO_Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="PO_RLS_date" Type="date" />
+    <Property Name="Material_Source_id" Type="int" />
+    <Property Name="Material_Source" Type="varchar" MaxLength="50" />
+    <Property Name="Supplier_Id" Type="int" />
+    <Property Name="Supplier_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Supplier_name" Type="varchar" MaxLength="500" />
+    <Property Name="PO_Requisitioned_by" Type="varchar" MaxLength="50" />
+    <Property Name="PO_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Payment_cycle" Type="varchar" MaxLength="50" />
+    <Property Name="Payment_type" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="100" />
+    <Property Name="Delivery_Date" Type="date" />
+    <Property Name="PO_raise_by" Type="varchar" MaxLength="50" />
+    <Property Name="PO_Approve_by" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+    <Property Name="PO_Approval_Flag" Type="bit" />
+    <Property Name="PO_Approved_date" Type="datetime" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="Reason" Type="varchar" MaxLength="255" />
+    <Property Name="Delete_Reason" Type="varchar" MaxLength="255" />
+    <Property Name="is_Syunc" Type="bit" />
+  </EntityType>
+  <EntityType Name="Purchase_Order_Line_item">
+    <Key>
+      <PropertyRef Name="PO_Line_Id" />
+    </Key>
+    <Property Name="PO_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Po_id" Type="int" />
+    <Property Name="PO_Number" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="A_Grade_Qty" Type="float" />
+    <Property Name="B_Grade_Qty" Type="float" />
+    <Property Name="Total_Qty" Type="float" />
+    <Property Name="Remark" Type="varchar" MaxLength="1000" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="A_Grade_Price" Type="float" />
+    <Property Name="B_Grade_Price" Type="float" />
+    <Property Name="Master_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="Rate_Template">
+    <Key>
+      <PropertyRef Name="Template_ID" />
+    </Key>
+    <Property Name="Template_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Template_Name" Type="varchar" MaxLength="100" />
+    <Property Name="DC_Id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Location_Id" Type="int" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Region_Id" Type="int" />
+    <Property Name="Region" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="20" />
+    <Property Name="Customer_Category" Type="varchar" MaxLength="50" />
+    <Property Name="Valitity_upto" Type="date" />
+    <Property Name="Is_Deleted" Type="bit" />
+    <Property Name="Reason" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="Customer_Category_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Region_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Category_Id" Type="int" />
+    <Property Name="SKU_Type_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Template_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Is_JDM_Synced" Type="bit" />
+    <Property Name="Is_BNG_Synced" Type="bit" />
+  </EntityType>
+  <EntityType Name="Rate_Template_Line_item">
+    <Key>
+      <PropertyRef Name="RT_Line_Id" />
+    </Key>
+    <Property Name="RT_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RT_id" Type="int" />
+    <Property Name="Material_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="20" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="50" />
+    <Property Name="UOM" Type="varchar" MaxLength="10" />
+    <Property Name="Grade" Type="varchar" MaxLength="10" />
+    <Property Name="Selling_price" Type="float" />
+    <Property Name="MRP" Type="float" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="Pack_Weight_Type_Id" Type="int" />
+    <Property Name="Pack_Weight_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Rate_Template_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Material_Auto_Num_Code" Type="varchar" MaxLength="255" />
+    <Property Name="HSN_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Total_GST" Type="float" />
+    <Property Name="CGST" Type="float" />
+    <Property Name="SGST" Type="float" />
+  </EntityType>
+  <EntityType Name="Rate_Template_Num_Gen">
+    <Key>
+      <PropertyRef Name="Rate_Template_Num_Gen_Id" />
+    </Key>
+    <Property Name="Rate_Template_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Rate_Template_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Region_Master">
+    <Key>
+      <PropertyRef Name="Region_Id" />
+    </Key>
+    <Property Name="Region_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Region_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Region_Name" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Role_Master">
+    <Key>
+      <PropertyRef Name="Role_Id" />
+    </Key>
+    <Property Name="Role_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role_Name" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Is_Delete" Type="bit" />
+  </EntityType>
+  <EntityType Name="Role_Menu_Access">
+    <Key>
+      <PropertyRef Name="Menu_Role_Access_Id" />
+    </Key>
+    <Property Name="Menu_Role_Access_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role_Id" Type="int" />
+    <Property Name="Menu_Id" Type="int" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Parent_Id" Type="int" />
+    <Property Name="Menu_Previlleges" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Role_User_Access">
+    <Key>
+      <PropertyRef Name="User_Role_Access_Id" />
+    </Key>
+    <Property Name="User_Role_Access_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role_Id" Type="int" />
+    <Property Name="User_Id" Type="int" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Route_Area_Master">
+    <Key>
+      <PropertyRef Name="Route_Area_Master_Id" />
+    </Key>
+    <Property Name="Route_Area_Master_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Location_Id" Type="int" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="250" />
+    <Property Name="Location_Name" Type="varchar" MaxLength="250" />
+    <Property Name="Location_Type" Type="varchar" MaxLength="250" />
+    <Property Name="Pincode" Type="varchar" MaxLength="255" />
+    <Property Name="Area_Name" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Route_Master">
+    <Key>
+      <PropertyRef Name="Route_Master_Id" />
+    </Key>
+    <Property Name="Route_Master_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Orgin_Location_Id" Type="int" />
+    <Property Name="Orgin_Location_Code" Type="varchar" MaxLength="250" />
+    <Property Name="Orgin_Location" Type="varchar" MaxLength="250" />
+    <Property Name="Target_Location_Id" Type="int" />
+    <Property Name="Target_Location" Type="varchar" MaxLength="250" />
+    <Property Name="Target_Location_Code" Type="varchar" MaxLength="250" />
+    <Property Name="Target_Loc_Type" Type="varchar" MaxLength="250" />
+    <Property Name="Route_Code" Type="varchar" MaxLength="250" />
+    <Property Name="Route_Id" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="Route" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Route_Master_Auto_Num_Gen">
+    <Key>
+      <PropertyRef Name="Route_Master_Auto_Gen_Id" />
+    </Key>
+    <Property Name="Route_Master_Auto_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Route_Prefix" Type="varchar" MaxLength="50" />
+    <Property Name="Route_Last_No" Type="int" />
+  </EntityType>
+  <EntityType Name="Sales_Route_Mapping">
+    <Key>
+      <PropertyRef Name="Sales_Route_Mapping_Id" />
+    </Key>
+    <Property Name="Sales_Route_Mapping_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sales_Person_Id" Type="int" />
+    <Property Name="Sales_Person_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Route_Id" Type="int" />
+    <Property Name="Orgin_Location_Id" Type="int" />
+    <Property Name="Orgin_Location_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Orgin_Location_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Target_Location_Id" Type="int" />
+    <Property Name="Target_Location_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Target_Location_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Route_Alias_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Route_Code" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="255" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="SKU_Main_Group">
+    <Key>
+      <PropertyRef Name="SKU_Main_Group_Id" />
+    </Key>
+    <Property Name="SKU_Main_Group_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SKU_Description" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SKU_Main_Sub_Mapping">
+    <Key>
+      <PropertyRef Name="SKU_mapping _Id" />
+    </Key>
+    <Property Name="SKU_mapping _Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="SKU_Main_Group_Id" Type="int" />
+    <Property Name="SKU_Sub_Group_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="SKU_Master">
+    <Key>
+      <PropertyRef Name="SKU_Id" />
+    </Key>
+    <Property Name="SKU_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Material_Code" Type="varchar" MaxLength="255" />
+    <Property Name="SKU_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="SKU_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Receiving_JDP" Type="varchar" MaxLength="255" />
+    <Property Name="UOM" Type="varchar" MaxLength="255" />
+    <Property Name="Chennai_Alias" Type="varchar" MaxLength="255" />
+    <Property Name="Coimbatore_Alias" Type="varchar" MaxLength="255" />
+    <Property Name="Ooty_Alias" Type="varchar" MaxLength="255" />
+    <Property Name="Bangalore_Alias" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Tally_Status" Type="varchar" MaxLength="50" />
+    <Property Name="HSN_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Total_GST" Type="float" />
+    <Property Name="CGST" Type="float" />
+    <Property Name="SGST" Type="float" />
+  </EntityType>
+  <EntityType Name="SKU_Sub_Group">
+    <Key>
+      <PropertyRef Name="SKU_Sub_Group_Id" />
+    </Key>
+    <Property Name="SKU_Sub_Group_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SKU_Description" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ST_NUM_Generation">
+    <Key>
+      <PropertyRef Name="ST_Num_Gen_Id" />
+    </Key>
+    <Property Name="ST_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="ST_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="STI_Line_item">
+    <Key>
+      <PropertyRef Name="STI_Line_Id" />
+    </Key>
+    <Property Name="STI_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="STI_id" Type="int" />
+    <Property Name="STI_Number" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_SubType_Id" Type="int" />
+    <Property Name="SKU_SubType" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Type_Id" Type="int" />
+    <Property Name="Pack_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Size" Type="varchar" MaxLength="255" />
+    <Property Name="Pack_Weight_Type_Id" Type="int" />
+    <Property Name="Pack_Weight_Type" Type="varchar" MaxLength="255" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="Grade" Type="varchar" MaxLength="50" />
+    <Property Name="Total_Qty" Type="float" />
+    <Property Name="Remark" Type="varchar" MaxLength="1000" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Master_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="Stirnkage_Summary">
+    <Key>
+      <PropertyRef Name="Stirnkage_Summary_Id" />
+    </Key>
+    <Property Name="Stirnkage_Summary_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adjustment_Batch_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Adjustment_Freeze" Type="bit" />
+    <Property Name="is_Adjusted" Type="bit" />
+    <Property Name="Closing_Date" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="Stock">
+    <Key>
+      <PropertyRef Name="Stock_Id" />
+    </Key>
+    <Property Name="Stock_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stock_code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="100" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="150" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Closing_Qty" Type="float" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="Material_Code" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Stock_Code_Num_Gen">
+    <Key>
+      <PropertyRef Name="Stock_Num_Gen_Id" />
+    </Key>
+    <Property Name="Stock_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Stock_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Stock_Convertion_Tracking">
+    <Key>
+      <PropertyRef Name="Stock_Convertion_Id" />
+    </Key>
+    <Property Name="Stock_Convertion_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stock_Id" Type="int" Nullable="false" />
+    <Property Name="Stock_Code" Type="varchar" MaxLength="255" />
+    <Property Name="DC_id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Id" Type="int" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="100" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="10" />
+    <Property Name="Stock_Qty" Type="float" />
+    <Property Name="UOM" Type="varchar" MaxLength="10" />
+    <Property Name="Type" Type="varchar" MaxLength="20" />
+    <Property Name="Created_By" Type="varchar" MaxLength="50" />
+    <Property Name="Updated_By" Type="varchar" MaxLength="50" />
+    <Property Name="Created_Date" Type="date" />
+    <Property Name="Updated_Date" Type="date" />
+    <Property Name="Convert_From_Stock_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Is_Syunc" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.Stock_History' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Stock_History">
+    <Key>
+      <PropertyRef Name="Stock_History_id" />
+      <PropertyRef Name="Stock_Id" />
+    </Key>
+    <Property Name="Stock_History_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stock_Id" Type="int" Nullable="false" />
+    <Property Name="Stock_code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="100" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="150" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Closing_Qty" Type="float" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="Closing_Date" Type="datetime" />
+    <Property Name="Material_Code" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Stock_Transaction">
+    <Key>
+      <PropertyRef Name="ST_Tran_ID" />
+    </Key>
+    <Property Name="ST_Tran_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stock_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="INW_id" Type="int" />
+    <Property Name="GRN_Number" Type="varchar" MaxLength="50" />
+    <Property Name="GRN_Line_Id" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="150" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="100" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="Supplier_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Supplier_Name" Type="varchar" MaxLength="150" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Stock_Transfer_Indent">
+    <Key>
+      <PropertyRef Name="STI_id" />
+    </Key>
+    <Property Name="STI_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="STI_Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Indent_Raised_by_DC_Id" Type="int" />
+    <Property Name="Indent_Raised_by_DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="STI_RLS_date" Type="date" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="100" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="Material_Source_id" Type="int" />
+    <Property Name="Material_Source" Type="varchar" MaxLength="50" />
+    <Property Name="Intermediate_DC_Code" Type="varchar" MaxLength="100" />
+    <Property Name="Delivery_DC_id" Type="int" />
+    <Property Name="Delivery_DC_Code" Type="varchar" MaxLength="255" />
+    <Property Name="STI_Type" Type="varchar" MaxLength="255" />
+    <Property Name="STI_Delivery_cycle" Type="varchar" MaxLength="10" />
+    <Property Name="DC_Delivery_Date" Type="date" />
+    <Property Name="STI_raise_by" Type="varchar" MaxLength="50" />
+    <Property Name="STI_Approve_by" Type="varchar" MaxLength="50" />
+    <Property Name="STI_Approval_Flag" Type="bit" />
+    <Property Name="STI_Approved_date" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+    <Property Name="Reason" Type="varchar" MaxLength="255" />
+    <Property Name="DeleteReason" Type="varchar" MaxLength="255" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Syunc" Type="bit" />
+  </EntityType>
+  <EntityType Name="Stock_Xfer_Dispatch_Num_Gen">
+    <Key>
+      <PropertyRef Name="Dispatch_Num_Gen_Id" />
+    </Key>
+    <Property Name="Dispatch_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Stock_Xfer_Dispatch_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Strinkage_Stock_Adj_Num_Gen">
+    <Key>
+      <PropertyRef Name="Strinkage_Stock_Adj_Num_Gen_Id" />
+    </Key>
+    <Property Name="Strinkage_Stock_Adj_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Financial_Year" Type="varchar" MaxLength="50" />
+    <Property Name="Strinkage_Stock_Adj_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Strinkage_Stock_Adjustement">
+    <Key>
+      <PropertyRef Name="Strinkage_Stock_Adjustement_Id" />
+    </Key>
+    <Property Name="Strinkage_Stock_Adjustement_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adjustment_Batch_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Stirnkage_Summary_Id_FK" Type="int" />
+    <Property Name="Stock_Id" Type="int" />
+    <Property Name="Material_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Stock_code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Name" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="100" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="150" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="255" />
+    <Property Name="System_Stock_Qty" Type="float" />
+    <Property Name="Closing_Qty" Type="float" />
+    <Property Name="Strinkage_Qty" Type="float" />
+    <Property Name="Close_Date" Type="date" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="Supplier_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Supplier_code" Type="varchar" MaxLength="50" />
+    <Property Name="Address1" Type="varchar" MaxLength="500" />
+    <Property Name="Address2" Type="varchar" MaxLength="500" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="District" Type="varchar" MaxLength="50" />
+    <Property Name="Pincode" Type="int" />
+    <Property Name="Primary_Contact_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Contact_Number" Type="bigint" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Secondary_Email_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Primary_Email_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="50" />
+    <Property Name="is_Syunc" Type="bit" />
+    <Property Name="Collection_Centre_Id" Type="int" />
+    <Property Name="Collection_Centre" Type="varchar" MaxLength="255" />
+    <Property Name="Date_Of_Birth" Type="date" />
+    <Property Name="Father_Name" Type="varchar" MaxLength="255" />
+    <Property Name="PAN_Number" Type="varchar" MaxLength="255" />
+    <Property Name="Bank_Name" Type="varchar" MaxLength="500" />
+    <Property Name="Bank_Account_Number" Type="bigint" />
+    <Property Name="Payment_Type_Id" Type="int" />
+    <Property Name="Payment_Type" Type="varchar" MaxLength="255" />
+    <Property Name="Photo" Type="varchar" MaxLength="1000" />
+    <Property Name="Supplier_Activation_Date" Type="date" />
+    <Property Name="Supplier_IDCard_Number" Type="varchar" MaxLength="255" />
+    <Property Name="Is_Delete" Type="bit" />
+    <Property Name="Farm_location" Type="varchar" MaxLength="255" />
+    <Property Name="Farm_Area" Type="varchar" MaxLength="255" />
+    <Property Name="Tally_Status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Supplier_Code_Num_Gen">
+    <Key>
+      <PropertyRef Name="Supplier_Num_Gen_Id" />
+    </Key>
+    <Property Name="Supplier_Num_Gen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stock_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Sync_Checking">
+    <Key>
+      <PropertyRef Name="Sync_id" />
+    </Key>
+    <Property Name="Sync_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sync_Number" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Created_Date" Type="date" />
+    <Property Name="Created_By" Type="varchar" MaxLength="50" />
+    <Property Name="Updated_Date" Type="date" />
+    <Property Name="Updated_By" Type="varchar" MaxLength="50" />
+    <Property Name="is_Syunc" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sync_Checking_Line_item">
+    <Key>
+      <PropertyRef Name="SC_Line_Id" />
+    </Key>
+    <Property Name="SC_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sync_id" Type="int" />
+    <Property Name="Sync_Number" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="Grade" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TALLY_MAPPING">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Activity" Type="varchar" MaxLength="50" />
+    <Property Name="Module Name" Type="varchar" MaxLength="50" />
+    <Property Name="VOUCHER_TYPE" Type="varchar" MaxLength="50" />
+    <Property Name="LEDGER_CODE" Type="varchar" MaxLength="50" />
+    <Property Name="LEDGER_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="GROUP_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="COST_CENTRE_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="Is_Delete" Type="bit" />
+  </EntityType>
+  <EntityType Name="Units">
+    <Key>
+      <PropertyRef Name="Unit_Id" />
+    </Key>
+    <Property Name="Unit_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Unit_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="User_DC_Access">
+    <Key>
+      <PropertyRef Name="DC_Access_User_Id" />
+    </Key>
+    <Property Name="DC_Access_User_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_id" Type="int" />
+    <Property Name="User_Id" Type="int" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User_Details">
+    <Key>
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="User_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="100" />
+    <Property Name="First_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Last_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Email_Id" Type="varchar" MaxLength="50" />
+    <Property Name="Phone" Type="bigint" />
+    <Property Name="Address1" Type="varchar" MaxLength="1000" />
+    <Property Name="Address2" Type="varchar" MaxLength="1000" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="User_Login_Type" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User_Location_Access">
+    <Key>
+      <PropertyRef Name="Location_Access_User_Id" />
+    </Key>
+    <Property Name="Location_Access_User_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Location_id" Type="int" />
+    <Property Name="Location_Code" Type="varchar" MaxLength="50" />
+    <Property Name="User_Id" Type="int" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VoucherType">
+    <Key>
+      <PropertyRef Name="VoucherType_Id" />
+    </Key>
+    <Property Name="VoucherType_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MVoucherType_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Wastage_Auto_Num_Gen">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Wastage_Last_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="Wastage_Creation">
+    <Key>
+      <PropertyRef Name="Wastage_Id" />
+    </Key>
+    <Property Name="Wastage_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Wastage_Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DC_Id" Type="int" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Ref_Id" Type="int" />
+    <Property Name="Ref_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Wastage_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Wastage_raisedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Wastage_Rls_Date" Type="date" />
+    <Property Name="is_Deleted" Type="bit" />
+    <Property Name="Remark" Type="varchar" MaxLength="20" />
+    <Property Name="Wastage_Approval_Flag" Type="bit" />
+    <Property Name="Wastage_approved_user_id" Type="int" />
+    <Property Name="Wastage_approved_by" Type="varchar" MaxLength="50" />
+    <Property Name="Reject_Reason" Type="varchar(max)" />
+    <Property Name="Wastage_approved_date" Type="date" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="is_Syunc" Type="bit" />
+  </EntityType>
+  <EntityType Name="Wastage_Line_item">
+    <Key>
+      <PropertyRef Name="Wastage_Line_Id" />
+    </Key>
+    <Property Name="Wastage_Line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Wastage_Id" Type="int" />
+    <Property Name="Wastage_Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Ref_Id" Type="int" />
+    <Property Name="Ref_Line_Id" Type="int" />
+    <Property Name="SKU_Type_Id" Type="int" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="50" />
+    <Property Name="UOM" Type="varchar" MaxLength="50" />
+    <Property Name="Wastage_Qty" Type="float" />
+    <Property Name="Wasted_Qty_Price" Type="float" />
+    <Property Name="Reason" Type="varchar" MaxLength="50" />
+    <Property Name="Stock_Reduce_Flag" Type="bit" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedDate" Type="date" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Grade" Type="varchar" MaxLength="20" />
+    <Property Name="is_Stk_Update" Type="bit" />
+    <Property Name="Tally_Status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Wastage_Supplier_Info">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Wastage_Line_Id" Type="int" />
+    <Property Name="Wastage_Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SKU_ID" Type="int" />
+    <Property Name="SKU_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="50" />
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Supplier_Id" Type="int" />
+    <Property Name="Supplier_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Supplier_name" Type="varchar" MaxLength="500" />
+    <Property Name="Grade" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_CSI2_CUST' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_CSI2_CUST">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="No_of_SKU" Type="int" />
+    <Property Name="No_of_CSI_ORDER" Type="int" />
+    <Property Name="No_of_Customer" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_CSI2_CUST_PERCENTBASE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_CSI2_CUST_PERCENTBASE">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sku_Count" Type="int" />
+    <Property Name="No_of_CSI_ORDER" Type="int" />
+    <Property Name="Customer_count" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_CSISTIADD' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_CSISTIADD">
+    <Key>
+      <PropertyRef Name="Total_Qty" />
+      <PropertyRef Name="Dispatched_orders" />
+      <PropertyRef Name="Dispatched_qty" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Total_Orders" Type="int" />
+    <Property Name="Total_Qty" Type="float" Nullable="false" />
+    <Property Name="Dispatched_orders" Type="int" Nullable="false" />
+    <Property Name="Dispatched_qty" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_CSISTIFORGRAPH' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_CSISTIFORGRAPH">
+    <Key>
+      <PropertyRef Name="Total_Qty" />
+      <PropertyRef Name="Dispatched_orders" />
+      <PropertyRef Name="Dispatched_qty" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Total_Orders" Type="int" />
+    <Property Name="Total_Qty" Type="float" Nullable="false" />
+    <Property Name="Dispatched_orders" Type="int" Nullable="false" />
+    <Property Name="Dispatched_qty" Type="float" Nullable="false" />
+    <Property Name="Created_year" Type="int" />
+    <Property Name="Created_Month" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_DISPATCH' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_DISPATCH">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Customer_Dispatch_Number" Type="int" />
+    <Property Name="TOTAL_QTY" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_GRN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_GRN">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="No_of_Supplier_Name" Type="int" />
+    <Property Name="No_of_SKU" Type="int" />
+    <Property Name="Total_Qty" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_PO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_PO">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="No_of_PO" Type="int" />
+    <Property Name="No_of_Supplier_name" Type="int" />
+    <Property Name="TOTAL_Qty" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_STI' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_STI">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="STI_Number" Type="int" />
+    <Property Name="Qty" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_STOCK' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_STOCK">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="No_of_SKUs" Type="int" />
+    <Property Name="Closing_Qty" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_TOP5CUSTOMER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_TOP5CUSTOMER">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Customer_Order" Type="int" />
+    <Property Name="Customer_Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_TOP5SKU' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_TOP5SKU">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SKU_Name" Type="varchar" MaxLength="150" />
+    <Property Name="Closing_Qty" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.DCDASHBOARD_WASTAGE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DCDASHBOARD_WASTAGE">
+    <Key>
+      <PropertyRef Name="DC_Code" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="No_of_SKUs" Type="int" />
+    <Property Name="Wastage_Qty" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_12MONTH_BASED_ORDER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_12MONTH_BASED_ORDER">
+    <Key>
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="Category" Type="varchar" MaxLength="255" />
+    <Property Name="Total_Count" Type="int" />
+    <Property Name="Type" Type="varchar" MaxLength="7" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_CSI' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_CSI">
+    <Key>
+      <PropertyRef Name="CSI_Qty" />
+      <PropertyRef Name="CDN_Qty" />
+      <PropertyRef Name="Invoice_Qty" />
+      <PropertyRef Name="Customer_return_qty" />
+      <PropertyRef Name="Fill_Rate" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="SKU_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="CSI_Qty" Type="float" Nullable="false" />
+    <Property Name="CDN_Qty" Type="float" Nullable="false" />
+    <Property Name="Invoice_Qty" Type="float" Nullable="false" />
+    <Property Name="Customer_return_qty" Type="float" Nullable="false" />
+    <Property Name="Fill_Rate" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_CUSTOMER_FILL_RATE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_CUSTOMER_FILL_RATE">
+    <Key>
+      <PropertyRef Name="Modern Retail" />
+      <PropertyRef Name="General Trade" />
+      <PropertyRef Name="Distributor" />
+      <PropertyRef Name="Exporter" />
+      <PropertyRef Name="HORECA" />
+      <PropertyRef Name="Market Sale" />
+      <PropertyRef Name="Wholesaler" />
+      <PropertyRef Name="DC Sale" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="Modern Retail" Type="int" Nullable="false" />
+    <Property Name="General Trade" Type="int" Nullable="false" />
+    <Property Name="Distributor" Type="int" Nullable="false" />
+    <Property Name="Exporter" Type="int" Nullable="false" />
+    <Property Name="HORECA" Type="int" Nullable="false" />
+    <Property Name="Market Sale" Type="int" Nullable="false" />
+    <Property Name="Wholesaler" Type="int" Nullable="false" />
+    <Property Name="DC Sale" Type="int" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="16" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_DISPATCH' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_DISPATCH">
+    <Key>
+      <PropertyRef Name="A" />
+      <PropertyRef Name="B" />
+      <PropertyRef Name="Total_qty" />
+    </Key>
+    <Property Name="Delivery_Location_Code" Type="varchar" MaxLength="100" />
+    <Property Name="No_SKU" Type="int" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="SKU_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="A" Type="float" Nullable="false" />
+    <Property Name="B" Type="float" Nullable="false" />
+    <Property Name="Total_qty" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_DISPATCH_PACKTYPE_BASED' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_DISPATCH_PACKTYPE_BASED">
+    <Key>
+      <PropertyRef Name="Branded Retail" />
+      <PropertyRef Name="Branded Bulk" />
+      <PropertyRef Name="Un Branded Bulk" />
+      <PropertyRef Name="Total" />
+    </Key>
+    <Property Name="Number_of_SKU" Type="int" />
+    <Property Name="Delivery_Location_Code" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="SKU_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="Branded Retail" Type="float" Nullable="false" />
+    <Property Name="Branded Bulk" Type="float" Nullable="false" />
+    <Property Name="Un Branded Bulk" Type="float" Nullable="false" />
+    <Property Name="Total" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_MONTH_BASED_ORDER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_MONTH_BASED_ORDER">
+    <Key>
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="Category" Type="varchar" MaxLength="255" />
+    <Property Name="Total_Count" Type="int" />
+    <Property Name="Type" Type="varchar" MaxLength="7" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_OF_IN_OUT_SUMMARY' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_OF_IN_OUT_SUMMARY">
+    <Key>
+      <PropertyRef Name="IN_SKU_Count" />
+      <PropertyRef Name="IN_TOTAL_QTY" />
+      <PropertyRef Name="OUT_SKU_Count" />
+      <PropertyRef Name="OUT_TOTAL_QTY" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Type" Type="varchar" MaxLength="100" />
+    <Property Name="Grade" Type="varchar" MaxLength="1" />
+    <Property Name="UOM" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="IN_SKU_Count" Type="int" Nullable="false" />
+    <Property Name="IN_TOTAL_QTY" Type="float" Nullable="false" />
+    <Property Name="OUT_SKU_Count" Type="int" Nullable="false" />
+    <Property Name="OUT_TOTAL_QTY" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_PURCHASE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_PURCHASE">
+    <Key>
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="Expr1" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="SKU_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="Po_Qty" Type="float" />
+    <Property Name="Recived_Qty" Type="float" />
+    <Property Name="Fill_Rate" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_STI_DISPATCH' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_STI_DISPATCH">
+    <Key>
+      <PropertyRef Name="Material_Source" />
+    </Key>
+    <Property Name="Material_Source" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="SKU_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="Dispatch_Qty" Type="float" />
+    <Property Name="Fill_Rate" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_STOCK_SUMMARY_UPDATED' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_STOCK_SUMMARY_UPDATED">
+    <Key>
+      <PropertyRef Name="A_GRADE" />
+      <PropertyRef Name="B_GRADE" />
+      <PropertyRef Name="TOTAL_GRADE_VALUE" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="A_GRADE" Type="float" Nullable="false" />
+    <Property Name="B_GRADE" Type="float" Nullable="false" />
+    <Property Name="TOTAL_GRADE_VALUE" Type="float" Nullable="false" />
+    <Property Name="Number_of_SKU" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DEMOLEAF.dbo.REPORT_WASTAGE_QTY' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="REPORT_WASTAGE_QTY">
+    <Key>
+      <PropertyRef Name="Floor" />
+      <PropertyRef Name="Process" />
+      <PropertyRef Name="C_QTY" />
+      <PropertyRef Name="Total_qty" />
+    </Key>
+    <Property Name="DC_Code" Type="varchar" MaxLength="50" />
+    <Property Name="SKU_Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="Floor" Type="float" Nullable="false" />
+    <Property Name="Process" Type="float" Nullable="false" />
+    <Property Name="C_QTY" Type="float" Nullable="false" />
+    <Property Name="Total_qty" Type="float" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Dispatch_Creation_Dispatch_Creation">
+    <End Role="Dispatch_Creation" Type="Self.Dispatch_Creation" Multiplicity="1" />
+    <End Role="Dispatch_Creation1" Type="Self.Dispatch_Creation" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Dispatch_Creation">
+        <PropertyRef Name="Dispatch_Id" />
+      </Principal>
+      <Dependent Role="Dispatch_Creation1">
+        <PropertyRef Name="Dispatch_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dispatch_Supplier_Track_Dispatch_Supplier_Track">
+    <End Role="Dispatch_Supplier_Track" Type="Self.Dispatch_Supplier_Track" Multiplicity="1" />
+    <End Role="Dispatch_Supplier_Track1" Type="Self.Dispatch_Supplier_Track" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Dispatch_Supplier_Track">
+        <PropertyRef Name="Dispatch_Track_Id" />
+      </Principal>
+      <Dependent Role="Dispatch_Supplier_Track1">
+        <PropertyRef Name="Dispatch_Track_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_Creation_Invoice_Creation">
+    <End Role="Invoice_Creation" Type="Self.Invoice_Creation" Multiplicity="1" />
+    <End Role="Invoice_Creation1" Type="Self.Invoice_Creation" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice_Creation">
+        <PropertyRef Name="invoice_Id" />
+      </Principal>
+      <Dependent Role="Invoice_Creation1">
+        <PropertyRef Name="invoice_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Purchase_Order_Purchase_Order">
+    <End Role="Purchase_Order" Type="Self.Purchase_Order" Multiplicity="1" />
+    <End Role="Purchase_Order1" Type="Self.Purchase_Order" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Purchase_Order">
+        <PropertyRef Name="Po_id" />
+      </Principal>
+      <Dependent Role="Purchase_Order1">
+        <PropertyRef Name="Po_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stock_Stock">
+    <End Role="Stock" Type="Self.Stock" Multiplicity="1" />
+    <End Role="Stock1" Type="Self.Stock" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Stock">
+        <PropertyRef Name="Stock_Id" />
+      </Principal>
+      <Dependent Role="Stock1">
+        <PropertyRef Name="Stock_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stock_Transaction_Stock_Transaction">
+    <End Role="Stock_Transaction" Type="Self.Stock_Transaction" Multiplicity="1" />
+    <End Role="Stock_Transaction1" Type="Self.Stock_Transaction" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Stock_Transaction">
+        <PropertyRef Name="ST_Tran_ID" />
+      </Principal>
+      <Dependent Role="Stock_Transaction1">
+        <PropertyRef Name="ST_Tran_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="dispatch_proc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="dispatchtostock_add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dispatch_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Grn_Detection_Service" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="V_inward_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Stock123" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Wastage_add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="V_Wastage_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Wastage_proc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="LEAFDBModelStoreContainer">
+    <EntitySet Name="Barcode_Fields_Order" EntityType="Self.Barcode_Fields_Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CSI_Line_item" EntityType="Self.CSI_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CSI_NUM_Generation" EntityType="Self.CSI_NUM_Generation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Code_Num_Gen" EntityType="Self.Customer_Code_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Dispatch_Num_Gen" EntityType="Self.Customer_Dispatch_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Indent" EntityType="Self.Customer_Indent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Indent_Line_item" EntityType="Self.Customer_Indent_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Indent_Num_Gen" EntityType="Self.Customer_Indent_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Indent_Template_Mapping" EntityType="Self.Customer_Indent_Template_Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Label_Auto_Num_Gen" EntityType="Self.Customer_Label_Auto_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Label_Template" EntityType="Self.Customer_Label_Template" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_LabelTemplate_Mapping" EntityType="Self.Customer_LabelTemplate_Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Rate_Template_Mapping" EntityType="Self.Customer_Rate_Template_Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Registration" EntityType="Self.Customer_Registration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Sale_Indent" EntityType="Self.Customer_Sale_Indent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_SKU_Mapping" EntityType="Self.Customer_SKU_Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DC_Customer_Mapping" EntityType="Self.DC_Customer_Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DC_Master" EntityType="Self.DC_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DC_Supplier_Mapping" EntityType="Self.DC_Supplier_Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DCK_Table" EntityType="Self.DCK_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Delivery_Cycle" EntityType="Self.Delivery_Cycle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DeliveryAddress" EntityType="Self.DeliveryAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dispatch_Consumables" EntityType="Self.Dispatch_Consumables" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dispatch_Creation" EntityType="Self.Dispatch_Creation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dispatch_Line_item" EntityType="Self.Dispatch_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dispatch_NUM_Generation" EntityType="Self.Dispatch_NUM_Generation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dispatch_SKU_Line_Items" EntityType="Self.Dispatch_SKU_Line_Items" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dispatch_Supplier_Track" EntityType="Self.Dispatch_Supplier_Track" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estimated_Stock" EntityType="Self.Estimated_Stock" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estimated_Stock_NUM_Generation" EntityType="Self.Estimated_Stock_NUM_Generation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExerciseTable" EntityType="Self.ExerciseTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GRN_Consumables" EntityType="Self.GRN_Consumables" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GRN_Creation" EntityType="Self.GRN_Creation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GRN_Line_item" EntityType="Self.GRN_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GRN_NUM_Generation" EntityType="Self.GRN_NUM_Generation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GRN_SKU_Line_Items" EntityType="Self.GRN_SKU_Line_Items" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Intermediate_DC" EntityType="Self.Intermediate_DC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoice_Collection" EntityType="Self.Invoice_Collection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoice_Collection_Excel_Tracking" EntityType="Self.Invoice_Collection_Excel_Tracking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoice_Collection_Num_Gen" EntityType="Self.Invoice_Collection_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoice_Collection_Tracking" EntityType="Self.Invoice_Collection_Tracking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoice_Creation" EntityType="Self.Invoice_Creation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoice_Line_item" EntityType="Self.Invoice_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoice_NUM_Generation" EntityType="Self.Invoice_NUM_Generation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Label_Fields" EntityType="Self.Label_Fields" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Location_Master" EntityType="Self.Location_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Material_Master" EntityType="Self.Material_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Material_Master_Num_Gen" EntityType="Self.Material_Master_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MaterialSource" EntityType="Self.MaterialSource" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menu_Master" EntityType="Self.Menu_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Multiple_CSI_tracking" EntityType="Self.Multiple_CSI_tracking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentCycle" EntityType="Self.PaymentCycle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentType" EntityType="Self.PaymentType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Physical_Stock" EntityType="Self.Physical_Stock" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PinCode" EntityType="Self.PinCode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PO_NUM_Generation" EntityType="Self.PO_NUM_Generation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PO_Rate_Change_Audit" EntityType="Self.PO_Rate_Change_Audit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PO_RequitionedBy" EntityType="Self.PO_RequitionedBy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PO_type" EntityType="Self.PO_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Printed_Barcode_Details" EntityType="Self.Printed_Barcode_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Purchase_Order" EntityType="Self.Purchase_Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Purchase_Order_Line_item" EntityType="Self.Purchase_Order_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rate_Template" EntityType="Self.Rate_Template" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rate_Template_Line_item" EntityType="Self.Rate_Template_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rate_Template_Num_Gen" EntityType="Self.Rate_Template_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Region_Master" EntityType="Self.Region_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role_Master" EntityType="Self.Role_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role_Menu_Access" EntityType="Self.Role_Menu_Access" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role_User_Access" EntityType="Self.Role_User_Access" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Route_Area_Master" EntityType="Self.Route_Area_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Route_Master" EntityType="Self.Route_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Route_Master_Auto_Num_Gen" EntityType="Self.Route_Master_Auto_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sales_Route_Mapping" EntityType="Self.Sales_Route_Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SKU_Main_Group" EntityType="Self.SKU_Main_Group" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SKU_Main_Sub_Mapping" EntityType="Self.SKU_Main_Sub_Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SKU_Master" EntityType="Self.SKU_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SKU_Sub_Group" EntityType="Self.SKU_Sub_Group" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ST_NUM_Generation" EntityType="Self.ST_NUM_Generation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="STI_Line_item" EntityType="Self.STI_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stirnkage_Summary" EntityType="Self.Stirnkage_Summary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock" EntityType="Self.Stock" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock_Code_Num_Gen" EntityType="Self.Stock_Code_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock_Convertion_Tracking" EntityType="Self.Stock_Convertion_Tracking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock_Transaction" EntityType="Self.Stock_Transaction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock_Transfer_Indent" EntityType="Self.Stock_Transfer_Indent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock_Xfer_Dispatch_Num_Gen" EntityType="Self.Stock_Xfer_Dispatch_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Strinkage_Stock_Adj_Num_Gen" EntityType="Self.Strinkage_Stock_Adj_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Strinkage_Stock_Adjustement" EntityType="Self.Strinkage_Stock_Adjustement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supplier_Code_Num_Gen" EntityType="Self.Supplier_Code_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sync_Checking" EntityType="Self.Sync_Checking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sync_Checking_Line_item" EntityType="Self.Sync_Checking_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TALLY_MAPPING" EntityType="Self.TALLY_MAPPING" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Units" EntityType="Self.Units" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_DC_Access" EntityType="Self.User_DC_Access" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_Details" EntityType="Self.User_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_Location_Access" EntityType="Self.User_Location_Access" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VoucherType" EntityType="Self.VoucherType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wastage_Auto_Num_Gen" EntityType="Self.Wastage_Auto_Num_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wastage_Creation" EntityType="Self.Wastage_Creation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wastage_Line_item" EntityType="Self.Wastage_Line_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wastage_Supplier_Info" EntityType="Self.Wastage_Supplier_Info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock_History" EntityType="Self.Stock_History" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Stock_History].[Stock_History_id] AS [Stock_History_id], 
+    [Stock_History].[Stock_Id] AS [Stock_Id], 
+    [Stock_History].[Stock_code] AS [Stock_code], 
+    [Stock_History].[DC_Code] AS [DC_Code], 
+    [Stock_History].[DC_Name] AS [DC_Name], 
+    [Stock_History].[SKU_Code] AS [SKU_Code], 
+    [Stock_History].[SKU_Name] AS [SKU_Name], 
+    [Stock_History].[SKU_Type_Id] AS [SKU_Type_Id], 
+    [Stock_History].[SKU_Type] AS [SKU_Type], 
+    [Stock_History].[Closing_Qty] AS [Closing_Qty], 
+    [Stock_History].[UOM] AS [UOM], 
+    [Stock_History].[Grade] AS [Grade], 
+    [Stock_History].[CreatedDate] AS [CreatedDate], 
+    [Stock_History].[UpdateDate] AS [UpdateDate], 
+    [Stock_History].[CreateBy] AS [CreateBy], 
+    [Stock_History].[UpdateBy] AS [UpdateBy], 
+    [Stock_History].[Closing_Date] AS [Closing_Date], 
+    [Stock_History].[Material_Code] AS [Material_Code]
+    FROM [dbo].[Stock_History] AS [Stock_History]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_CSI2_CUST" EntityType="Self.DCDASHBOARD_CSI2_CUST" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_CSI2_CUST].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_CSI2_CUST].[No_of_SKU] AS [No_of_SKU], 
+    [DCDASHBOARD_CSI2_CUST].[No_of_CSI_ORDER] AS [No_of_CSI_ORDER], 
+    [DCDASHBOARD_CSI2_CUST].[No_of_Customer] AS [No_of_Customer]
+    FROM [dbo].[DCDASHBOARD_CSI2_CUST] AS [DCDASHBOARD_CSI2_CUST]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_CSI2_CUST_PERCENTBASE" EntityType="Self.DCDASHBOARD_CSI2_CUST_PERCENTBASE" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_CSI2_CUST_PERCENTBASE].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_CSI2_CUST_PERCENTBASE].[Sku_Count] AS [Sku_Count], 
+    [DCDASHBOARD_CSI2_CUST_PERCENTBASE].[No_of_CSI_ORDER] AS [No_of_CSI_ORDER], 
+    [DCDASHBOARD_CSI2_CUST_PERCENTBASE].[Customer_count] AS [Customer_count]
+    FROM [dbo].[DCDASHBOARD_CSI2_CUST_PERCENTBASE] AS [DCDASHBOARD_CSI2_CUST_PERCENTBASE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_CSISTIADD" EntityType="Self.DCDASHBOARD_CSISTIADD" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_CSISTIADD].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_CSISTIADD].[Total_Orders] AS [Total_Orders], 
+    [DCDASHBOARD_CSISTIADD].[Total_Qty] AS [Total_Qty], 
+    [DCDASHBOARD_CSISTIADD].[Dispatched_orders] AS [Dispatched_orders], 
+    [DCDASHBOARD_CSISTIADD].[Dispatched_qty] AS [Dispatched_qty]
+    FROM [dbo].[DCDASHBOARD_CSISTIADD] AS [DCDASHBOARD_CSISTIADD]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_CSISTIFORGRAPH" EntityType="Self.DCDASHBOARD_CSISTIFORGRAPH" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_CSISTIFORGRAPH].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_CSISTIFORGRAPH].[Total_Orders] AS [Total_Orders], 
+    [DCDASHBOARD_CSISTIFORGRAPH].[Total_Qty] AS [Total_Qty], 
+    [DCDASHBOARD_CSISTIFORGRAPH].[Dispatched_orders] AS [Dispatched_orders], 
+    [DCDASHBOARD_CSISTIFORGRAPH].[Dispatched_qty] AS [Dispatched_qty], 
+    [DCDASHBOARD_CSISTIFORGRAPH].[Created_year] AS [Created_year], 
+    [DCDASHBOARD_CSISTIFORGRAPH].[Created_Month] AS [Created_Month]
+    FROM [dbo].[DCDASHBOARD_CSISTIFORGRAPH] AS [DCDASHBOARD_CSISTIFORGRAPH]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_DISPATCH" EntityType="Self.DCDASHBOARD_DISPATCH" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_DISPATCH].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_DISPATCH].[Customer_Dispatch_Number] AS [Customer_Dispatch_Number], 
+    [DCDASHBOARD_DISPATCH].[TOTAL_QTY] AS [TOTAL_QTY]
+    FROM [dbo].[DCDASHBOARD_DISPATCH] AS [DCDASHBOARD_DISPATCH]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_GRN" EntityType="Self.DCDASHBOARD_GRN" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_GRN].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_GRN].[No_of_Supplier_Name] AS [No_of_Supplier_Name], 
+    [DCDASHBOARD_GRN].[No_of_SKU] AS [No_of_SKU], 
+    [DCDASHBOARD_GRN].[Total_Qty] AS [Total_Qty]
+    FROM [dbo].[DCDASHBOARD_GRN] AS [DCDASHBOARD_GRN]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_PO" EntityType="Self.DCDASHBOARD_PO" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_PO].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_PO].[No_of_PO] AS [No_of_PO], 
+    [DCDASHBOARD_PO].[No_of_Supplier_name] AS [No_of_Supplier_name], 
+    [DCDASHBOARD_PO].[TOTAL_Qty] AS [TOTAL_Qty]
+    FROM [dbo].[DCDASHBOARD_PO] AS [DCDASHBOARD_PO]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_STI" EntityType="Self.DCDASHBOARD_STI" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_STI].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_STI].[STI_Number] AS [STI_Number], 
+    [DCDASHBOARD_STI].[Qty] AS [Qty]
+    FROM [dbo].[DCDASHBOARD_STI] AS [DCDASHBOARD_STI]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_STOCK" EntityType="Self.DCDASHBOARD_STOCK" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_STOCK].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_STOCK].[No_of_SKUs] AS [No_of_SKUs], 
+    [DCDASHBOARD_STOCK].[Closing_Qty] AS [Closing_Qty]
+    FROM [dbo].[DCDASHBOARD_STOCK] AS [DCDASHBOARD_STOCK]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_TOP5CUSTOMER" EntityType="Self.DCDASHBOARD_TOP5CUSTOMER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_TOP5CUSTOMER].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_TOP5CUSTOMER].[Customer_Order] AS [Customer_Order], 
+    [DCDASHBOARD_TOP5CUSTOMER].[Customer_Name] AS [Customer_Name]
+    FROM [dbo].[DCDASHBOARD_TOP5CUSTOMER] AS [DCDASHBOARD_TOP5CUSTOMER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_TOP5SKU" EntityType="Self.DCDASHBOARD_TOP5SKU" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_TOP5SKU].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_TOP5SKU].[SKU_Name] AS [SKU_Name], 
+    [DCDASHBOARD_TOP5SKU].[Closing_Qty] AS [Closing_Qty]
+    FROM [dbo].[DCDASHBOARD_TOP5SKU] AS [DCDASHBOARD_TOP5SKU]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DCDASHBOARD_WASTAGE" EntityType="Self.DCDASHBOARD_WASTAGE" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DCDASHBOARD_WASTAGE].[DC_Code] AS [DC_Code], 
+    [DCDASHBOARD_WASTAGE].[No_of_SKUs] AS [No_of_SKUs], 
+    [DCDASHBOARD_WASTAGE].[Wastage_Qty] AS [Wastage_Qty]
+    FROM [dbo].[DCDASHBOARD_WASTAGE] AS [DCDASHBOARD_WASTAGE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_12MONTH_BASED_ORDER" EntityType="Self.REPORT_12MONTH_BASED_ORDER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_12MONTH_BASED_ORDER].[DC_Code] AS [DC_Code], 
+    [REPORT_12MONTH_BASED_ORDER].[CreatedDate] AS [CreatedDate], 
+    [REPORT_12MONTH_BASED_ORDER].[Category] AS [Category], 
+    [REPORT_12MONTH_BASED_ORDER].[Total_Count] AS [Total_Count], 
+    [REPORT_12MONTH_BASED_ORDER].[Type] AS [Type]
+    FROM [dbo].[REPORT_12MONTH_BASED_ORDER] AS [REPORT_12MONTH_BASED_ORDER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_CSI" EntityType="Self.REPORT_CSI" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_CSI].[DC_Code] AS [DC_Code], 
+    [REPORT_CSI].[CreatedDate] AS [CreatedDate], 
+    [REPORT_CSI].[SKU_Category] AS [SKU_Category], 
+    [REPORT_CSI].[CSI_Qty] AS [CSI_Qty], 
+    [REPORT_CSI].[CDN_Qty] AS [CDN_Qty], 
+    [REPORT_CSI].[Invoice_Qty] AS [Invoice_Qty], 
+    [REPORT_CSI].[Customer_return_qty] AS [Customer_return_qty], 
+    [REPORT_CSI].[Fill_Rate] AS [Fill_Rate]
+    FROM [dbo].[REPORT_CSI] AS [REPORT_CSI]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_CUSTOMER_FILL_RATE" EntityType="Self.REPORT_CUSTOMER_FILL_RATE" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_CUSTOMER_FILL_RATE].[DC_Code] AS [DC_Code], 
+    [REPORT_CUSTOMER_FILL_RATE].[CreatedDate] AS [CreatedDate], 
+    [REPORT_CUSTOMER_FILL_RATE].[Modern Retail] AS [Modern Retail], 
+    [REPORT_CUSTOMER_FILL_RATE].[General Trade] AS [General Trade], 
+    [REPORT_CUSTOMER_FILL_RATE].[Distributor] AS [Distributor], 
+    [REPORT_CUSTOMER_FILL_RATE].[Exporter] AS [Exporter], 
+    [REPORT_CUSTOMER_FILL_RATE].[HORECA] AS [HORECA], 
+    [REPORT_CUSTOMER_FILL_RATE].[Market Sale] AS [Market Sale], 
+    [REPORT_CUSTOMER_FILL_RATE].[Wholesaler] AS [Wholesaler], 
+    [REPORT_CUSTOMER_FILL_RATE].[DC Sale] AS [DC Sale], 
+    [REPORT_CUSTOMER_FILL_RATE].[Type] AS [Type]
+    FROM [dbo].[REPORT_CUSTOMER_FILL_RATE] AS [REPORT_CUSTOMER_FILL_RATE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_DISPATCH" EntityType="Self.REPORT_DISPATCH" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_DISPATCH].[Delivery_Location_Code] AS [Delivery_Location_Code], 
+    [REPORT_DISPATCH].[No_SKU] AS [No_SKU], 
+    [REPORT_DISPATCH].[CreatedDate] AS [CreatedDate], 
+    [REPORT_DISPATCH].[SKU_Category] AS [SKU_Category], 
+    [REPORT_DISPATCH].[A] AS [A], 
+    [REPORT_DISPATCH].[B] AS [B], 
+    [REPORT_DISPATCH].[Total_qty] AS [Total_qty]
+    FROM [dbo].[REPORT_DISPATCH] AS [REPORT_DISPATCH]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_DISPATCH_PACKTYPE_BASED" EntityType="Self.REPORT_DISPATCH_PACKTYPE_BASED" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_DISPATCH_PACKTYPE_BASED].[Number_of_SKU] AS [Number_of_SKU], 
+    [REPORT_DISPATCH_PACKTYPE_BASED].[Delivery_Location_Code] AS [Delivery_Location_Code], 
+    [REPORT_DISPATCH_PACKTYPE_BASED].[CreatedDate] AS [CreatedDate], 
+    [REPORT_DISPATCH_PACKTYPE_BASED].[SKU_Category] AS [SKU_Category], 
+    [REPORT_DISPATCH_PACKTYPE_BASED].[Branded Retail] AS [Branded Retail], 
+    [REPORT_DISPATCH_PACKTYPE_BASED].[Branded Bulk] AS [Branded Bulk], 
+    [REPORT_DISPATCH_PACKTYPE_BASED].[Un Branded Bulk] AS [Un Branded Bulk], 
+    [REPORT_DISPATCH_PACKTYPE_BASED].[Total] AS [Total]
+    FROM [dbo].[REPORT_DISPATCH_PACKTYPE_BASED] AS [REPORT_DISPATCH_PACKTYPE_BASED]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_MONTH_BASED_ORDER" EntityType="Self.REPORT_MONTH_BASED_ORDER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_MONTH_BASED_ORDER].[DC_Code] AS [DC_Code], 
+    [REPORT_MONTH_BASED_ORDER].[CreatedDate] AS [CreatedDate], 
+    [REPORT_MONTH_BASED_ORDER].[Category] AS [Category], 
+    [REPORT_MONTH_BASED_ORDER].[Total_Count] AS [Total_Count], 
+    [REPORT_MONTH_BASED_ORDER].[Type] AS [Type]
+    FROM [dbo].[REPORT_MONTH_BASED_ORDER] AS [REPORT_MONTH_BASED_ORDER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_OF_IN_OUT_SUMMARY" EntityType="Self.REPORT_OF_IN_OUT_SUMMARY" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_OF_IN_OUT_SUMMARY].[DC_Code] AS [DC_Code], 
+    [REPORT_OF_IN_OUT_SUMMARY].[SKU_Type] AS [SKU_Type], 
+    [REPORT_OF_IN_OUT_SUMMARY].[Grade] AS [Grade], 
+    [REPORT_OF_IN_OUT_SUMMARY].[UOM] AS [UOM], 
+    [REPORT_OF_IN_OUT_SUMMARY].[CreatedDate] AS [CreatedDate], 
+    [REPORT_OF_IN_OUT_SUMMARY].[IN_SKU_Count] AS [IN_SKU_Count], 
+    [REPORT_OF_IN_OUT_SUMMARY].[IN_TOTAL_QTY] AS [IN_TOTAL_QTY], 
+    [REPORT_OF_IN_OUT_SUMMARY].[OUT_SKU_Count] AS [OUT_SKU_Count], 
+    [REPORT_OF_IN_OUT_SUMMARY].[OUT_TOTAL_QTY] AS [OUT_TOTAL_QTY]
+    FROM [dbo].[REPORT_OF_IN_OUT_SUMMARY] AS [REPORT_OF_IN_OUT_SUMMARY]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_PURCHASE" EntityType="Self.REPORT_PURCHASE" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_PURCHASE].[Expr1] AS [Expr1], 
+    [REPORT_PURCHASE].[CreatedDate] AS [CreatedDate], 
+    [REPORT_PURCHASE].[SKU_Category] AS [SKU_Category], 
+    [REPORT_PURCHASE].[Po_Qty] AS [Po_Qty], 
+    [REPORT_PURCHASE].[Recived_Qty] AS [Recived_Qty], 
+    [REPORT_PURCHASE].[Fill_Rate] AS [Fill_Rate]
+    FROM [dbo].[REPORT_PURCHASE] AS [REPORT_PURCHASE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_STI_DISPATCH" EntityType="Self.REPORT_STI_DISPATCH" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_STI_DISPATCH].[Material_Source] AS [Material_Source], 
+    [REPORT_STI_DISPATCH].[CreatedDate] AS [CreatedDate], 
+    [REPORT_STI_DISPATCH].[SKU_Category] AS [SKU_Category], 
+    [REPORT_STI_DISPATCH].[Qty] AS [Qty], 
+    [REPORT_STI_DISPATCH].[Dispatch_Qty] AS [Dispatch_Qty], 
+    [REPORT_STI_DISPATCH].[Fill_Rate] AS [Fill_Rate]
+    FROM [dbo].[REPORT_STI_DISPATCH] AS [REPORT_STI_DISPATCH]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_STOCK_SUMMARY_UPDATED" EntityType="Self.REPORT_STOCK_SUMMARY_UPDATED" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_STOCK_SUMMARY_UPDATED].[DC_Code] AS [DC_Code], 
+    [REPORT_STOCK_SUMMARY_UPDATED].[SKU_Category] AS [SKU_Category], 
+    [REPORT_STOCK_SUMMARY_UPDATED].[CreatedDate] AS [CreatedDate], 
+    [REPORT_STOCK_SUMMARY_UPDATED].[A_GRADE] AS [A_GRADE], 
+    [REPORT_STOCK_SUMMARY_UPDATED].[B_GRADE] AS [B_GRADE], 
+    [REPORT_STOCK_SUMMARY_UPDATED].[TOTAL_GRADE_VALUE] AS [TOTAL_GRADE_VALUE], 
+    [REPORT_STOCK_SUMMARY_UPDATED].[Number_of_SKU] AS [Number_of_SKU]
+    FROM [dbo].[REPORT_STOCK_SUMMARY_UPDATED] AS [REPORT_STOCK_SUMMARY_UPDATED]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="REPORT_WASTAGE_QTY" EntityType="Self.REPORT_WASTAGE_QTY" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [REPORT_WASTAGE_QTY].[DC_Code] AS [DC_Code], 
+    [REPORT_WASTAGE_QTY].[SKU_Category] AS [SKU_Category], 
+    [REPORT_WASTAGE_QTY].[CreatedDate] AS [CreatedDate], 
+    [REPORT_WASTAGE_QTY].[Floor] AS [Floor], 
+    [REPORT_WASTAGE_QTY].[Process] AS [Process], 
+    [REPORT_WASTAGE_QTY].[C_QTY] AS [C_QTY], 
+    [REPORT_WASTAGE_QTY].[Total_qty] AS [Total_qty]
+    FROM [dbo].[REPORT_WASTAGE_QTY] AS [REPORT_WASTAGE_QTY]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Dispatch_Creation_Dispatch_Creation" Association="Self.FK_Dispatch_Creation_Dispatch_Creation">
+      <End Role="Dispatch_Creation" EntitySet="Dispatch_Creation" />
+      <End Role="Dispatch_Creation1" EntitySet="Dispatch_Creation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dispatch_Supplier_Track_Dispatch_Supplier_Track" Association="Self.FK_Dispatch_Supplier_Track_Dispatch_Supplier_Track">
+      <End Role="Dispatch_Supplier_Track" EntitySet="Dispatch_Supplier_Track" />
+      <End Role="Dispatch_Supplier_Track1" EntitySet="Dispatch_Supplier_Track" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_Creation_Invoice_Creation" Association="Self.FK_Invoice_Creation_Invoice_Creation">
+      <End Role="Invoice_Creation" EntitySet="Invoice_Creation" />
+      <End Role="Invoice_Creation1" EntitySet="Invoice_Creation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Purchase_Order_Purchase_Order" Association="Self.FK_Purchase_Order_Purchase_Order">
+      <End Role="Purchase_Order" EntitySet="Purchase_Order" />
+      <End Role="Purchase_Order1" EntitySet="Purchase_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stock_Stock" Association="Self.FK_Stock_Stock">
+      <End Role="Stock" EntitySet="Stock" />
+      <End Role="Stock1" EntitySet="Stock" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stock_Transaction_Stock_Transaction" Association="Self.FK_Stock_Transaction_Stock_Transaction">
+      <End Role="Stock_Transaction" EntitySet="Stock_Transaction" />
+      <End Role="Stock_Transaction1" EntitySet="Stock_Transaction" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
